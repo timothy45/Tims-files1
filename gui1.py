@@ -18,5 +18,5 @@ text_size = Slider(app, command=change_text_size, start=10, end=80)
 
  
 app.display()
-test
+
  
