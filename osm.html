@@ -1,0 +1,4985 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
+    <script src="https://unpkg.com/leaflet@1.0.1/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/leaflet.markercluster-src.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/MarkerCluster.Default.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css" />
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <style> #map_26acea22a0cf4f5497271ca64ad98e3b {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_26acea22a0cf4f5497271ca64ad98e3b" ></div>
+        
+</body>
+<script>    
+    
+
+            
+                var southWest = L.latLng(-90, -180);
+                var northEast = L.latLng(90, 180);
+                var bounds = L.latLngBounds(southWest, northEast);
+            
+
+            var map_26acea22a0cf4f5497271ca64ad98e3b = L.map(
+                                  'map_26acea22a0cf4f5497271ca64ad98e3b',
+                                  {center: [0,0],
+                                  zoom: 2,
+                                  maxBounds: bounds,
+                                  layers: [],
+                                  worldCopyJump: false,
+                                  crs: L.CRS.EPSG3857
+                                 });
+            
+        
+    
+            var tile_layer_771cc853915f41fdb43223a104f6b02b = L.tileLayer(
+                'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+                {
+                    maxZoom: 18,
+                    minZoom: 1,
+                    continuousWorld: false,
+                    noWrap: false,
+                    attribution: 'Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.',
+                    detectRetina: false
+                    }
+                ).addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+
+        
+    
+
+            var circle_marker_753137a37b5343e496fa7d1479f4a875 = L.circleMarker(
+                [57.020755,9.883814],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#d22d00',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_c327dc2555014074a1e3a3d0d3129d0f = L.popup({maxWidth: '300'});
+
+            
+                var html_8d21a686d57a4b49baea5eaef1b4886e = $('<div id="html_8d21a686d57a4b49baea5eaef1b4886e" style="width: 100.0%; height: 100.0%;">UCN:21.64</div>')[0];
+                popup_c327dc2555014074a1e3a3d0d3129d0f.setContent(html_8d21a686d57a4b49baea5eaef1b4886e);
+            
+
+            circle_marker_753137a37b5343e496fa7d1479f4a875.bindPopup(popup_c327dc2555014074a1e3a3d0d3129d0f);
+
+            
+        
+    
+
+            var circle_marker_9339fe923b2e4deaad6c83e90208bea4 = L.circleMarker(
+                [49.1834,-123.08155],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#af5000',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_55d8034114904266b62c6c12efc675a1 = L.popup({maxWidth: '300'});
+
+            
+                var html_f1e20ff9708a4703b370a116e90ce982 = $('<div id="html_f1e20ff9708a4703b370a116e90ce982" style="width: 100.0%; height: 100.0%;">WARCS:26.05</div>')[0];
+                popup_55d8034114904266b62c6c12efc675a1.setContent(html_f1e20ff9708a4703b370a116e90ce982);
+            
+
+            circle_marker_9339fe923b2e4deaad6c83e90208bea4.bindPopup(popup_55d8034114904266b62c6c12efc675a1);
+
+            
+        
+    
+
+            var circle_marker_2ca7e687ca274b16bd5d44abf3c0d9c4 = L.circleMarker(
+                [52.06024,4.34064],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#d42b00',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_c50c9fceec6c4e02a5b653292c793a91 = L.popup({maxWidth: '300'});
+
+            
+                var html_4de8023348474fb0aa4bf51960af613e = $('<div id="html_4de8023348474fb0aa4bf51960af613e" style="width: 100.0%; height: 100.0%;">plusklas:21.34</div>')[0];
+                popup_c50c9fceec6c4e02a5b653292c793a91.setContent(html_4de8023348474fb0aa4bf51960af613e);
+            
+
+            circle_marker_2ca7e687ca274b16bd5d44abf3c0d9c4.bindPopup(popup_c50c9fceec6c4e02a5b653292c793a91);
+
+            
+        
+    
+
+            var circle_marker_94c5a200f3824808892600a6ca6944a0 = L.circleMarker(
+                [52.104131,-106.654687],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#817e00',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_533e85e811324beb9f6ee6e38424a2b3 = L.popup({maxWidth: '300'});
+
+            
+                var html_8bd9dd1a487b48b186199ad7b5e7f3d7 = $('<div id="html_8bd9dd1a487b48b186199ad7b5e7f3d7" style="width: 100.0%; height: 100.0%;">Delisle Elementary:31.85</div>')[0];
+                popup_533e85e811324beb9f6ee6e38424a2b3.setContent(html_8bd9dd1a487b48b186199ad7b5e7f3d7);
+            
+
+            circle_marker_94c5a200f3824808892600a6ca6944a0.bindPopup(popup_533e85e811324beb9f6ee6e38424a2b3);
+
+            
+        
+    
+
+            var circle_marker_d9cab4fb61cd450fa9d02f6c9058fd33 = L.circleMarker(
+                [21.822976,-102.283683],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#817e00',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_53971307e3c0496bbd41015009b834e2 = L.popup({maxWidth: '300'});
+
+            
+                var html_2655ba305f4a4e95b39bf5349e1e3298 = $('<div id="html_2655ba305f4a4e95b39bf5349e1e3298" style="width: 100.0%; height: 100.0%;">UP Weather Station:31.87</div>')[0];
+                popup_53971307e3c0496bbd41015009b834e2.setContent(html_2655ba305f4a4e95b39bf5349e1e3298);
+            
+
+            circle_marker_d9cab4fb61cd450fa9d02f6c9058fd33.bindPopup(popup_53971307e3c0496bbd41015009b834e2);
+
+            
+        
+    
+
+            var circle_marker_a1e60b12cf784a5b86564982c4657650 = L.circleMarker(
+                [44.4584,64.6025],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#b04f00',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_551630fc9719451690a71d20374b9d2f = L.popup({maxWidth: '300'});
+
+            
+                var html_5a236691009f42d5b53550a963b295ac = $('<div id="html_5a236691009f42d5b53550a963b295ac" style="width: 100.0%; height: 100.0%;">wnes-01:26.01</div>')[0];
+                popup_551630fc9719451690a71d20374b9d2f.setContent(html_5a236691009f42d5b53550a963b295ac);
+            
+
+            circle_marker_a1e60b12cf784a5b86564982c4657650.bindPopup(popup_551630fc9719451690a71d20374b9d2f);
+
+            
+        
+    
+
+            var circle_marker_412e208b9b234b97b131db6109790684 = L.circleMarker(
+                [50.110382,14.341192],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#a35c00',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_83caaf2b49464c6a8c42cb38d6f3b761 = L.popup({maxWidth: '300'});
+
+            
+                var html_7ec5f8d910b547a3ab996828f27601a2 = $('<div id="html_7ec5f8d910b547a3ab996828f27601a2" style="width: 100.0%; height: 100.0%;">ISP Weather Station:27.65</div>')[0];
+                popup_83caaf2b49464c6a8c42cb38d6f3b761.setContent(html_7ec5f8d910b547a3ab996828f27601a2);
+            
+
+            circle_marker_412e208b9b234b97b131db6109790684.bindPopup(popup_83caaf2b49464c6a8c42cb38d6f3b761);
+
+            
+        
+    
+
+            var circle_marker_5f099ea4fefc42cb9cf0e7edd17bb108 = L.circleMarker(
+                [37,123],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#9f6000',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_8ac2ee144467441195b8280a05395337 = L.popup({maxWidth: '300'});
+
+            
+                var html_1203ca5b0d7841109f2066e046a5b009 = $('<div id="html_1203ca5b0d7841109f2066e046a5b009" style="width: 100.0%; height: 100.0%;">NewHall:28.1</div>')[0];
+                popup_8ac2ee144467441195b8280a05395337.setContent(html_1203ca5b0d7841109f2066e046a5b009);
+            
+
+            circle_marker_5f099ea4fefc42cb9cf0e7edd17bb108.bindPopup(popup_8ac2ee144467441195b8280a05395337);
+
+            
+        
+    
+
+            var circle_marker_ca5b4eb7730447b9a6c83a815fbaab29 = L.circleMarker(
+                [53.094728,8.877459],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#c33c00',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_557105497ad648f9a1535dc69b984203 = L.popup({maxWidth: '300'});
+
+            
+                var html_4e850caa55e64ef7b78ac88b3fdcf237 = $('<div id="html_4e850caa55e64ef7b78ac88b3fdcf237" style="width: 100.0%; height: 100.0%;">Ronzwetter:23.54</div>')[0];
+                popup_557105497ad648f9a1535dc69b984203.setContent(html_4e850caa55e64ef7b78ac88b3fdcf237);
+            
+
+            circle_marker_ca5b4eb7730447b9a6c83a815fbaab29.bindPopup(popup_557105497ad648f9a1535dc69b984203);
+
+            
+        
+    
+
+            var circle_marker_556e1e246da942b69a949c0097b7c542 = L.circleMarker(
+                [22.368386,70.797492],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#44bb00',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_4df1d26fed1541d0be1838c79f887e12 = L.popup({maxWidth: '300'});
+
+            
+                var html_c9bbb006cf6c49d8a73e9ec03e96c39d = $('<div id="html_c9bbb006cf6c49d8a73e9ec03e96c39d" style="width: 100.0%; height: 100.0%;">Linquestus_wth_stn:39.62</div>')[0];
+                popup_4df1d26fed1541d0be1838c79f887e12.setContent(html_c9bbb006cf6c49d8a73e9ec03e96c39d);
+            
+
+            circle_marker_556e1e246da942b69a949c0097b7c542.bindPopup(popup_4df1d26fed1541d0be1838c79f887e12);
+
+            
+        
+    
+
+            var circle_marker_abfa81a4f6174a419cc3d42094e95eb4 = L.circleMarker(
+                [-22.3296,-49.073997],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#b84700',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_36c4b53adcff47deae7bdaaf2681f2de = L.popup({maxWidth: '300'});
+
+            
+                var html_d7159be631414195946dd4ecc0e342a7 = $('<div id="html_d7159be631414195946dd4ecc0e342a7" style="width: 100.0%; height: 100.0%;">Fatec Bauru:24.93</div>')[0];
+                popup_36c4b53adcff47deae7bdaaf2681f2de.setContent(html_d7159be631414195946dd4ecc0e342a7);
+            
+
+            circle_marker_abfa81a4f6174a419cc3d42094e95eb4.bindPopup(popup_36c4b53adcff47deae7bdaaf2681f2de);
+
+            
+        
+    
+
+            var circle_marker_403a737510784ccf88b367384d5d717b = L.circleMarker(
+                [51.379245,-0.391943],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#db2400',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_3034ffad2fdc47afa092c2e2b2c46a8e = L.popup({maxWidth: '300'});
+
+            
+                var html_a9be315be12e4e42ac3b68f438bc5f5d = $('<div id="html_a9be315be12e4e42ac3b68f438bc5f5d" style="width: 100.0%; height: 100.0%;">Test_One:20.54</div>')[0];
+                popup_3034ffad2fdc47afa092c2e2b2c46a8e.setContent(html_a9be315be12e4e42ac3b68f438bc5f5d);
+            
+
+            circle_marker_403a737510784ccf88b367384d5d717b.bindPopup(popup_3034ffad2fdc47afa092c2e2b2c46a8e);
+
+            
+        
+    
+
+            var circle_marker_0b3fd69dba0f4211a5b022e4181034fa = L.circleMarker(
+                [-56.0776,-34.8739],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#a15e00',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_8209e9ad8a634cfab26aa426db46ec88 = L.popup({maxWidth: '300'});
+
+            
+                var html_0cd451cc3c184a2a9ea7a22faca8b16c = $('<div id="html_0cd451cc3c184a2a9ea7a22faca8b16c" style="width: 100.0%; height: 100.0%;">S12_towers:27.86</div>')[0];
+                popup_8209e9ad8a634cfab26aa426db46ec88.setContent(html_0cd451cc3c184a2a9ea7a22faca8b16c);
+            
+
+            circle_marker_0b3fd69dba0f4211a5b022e4181034fa.bindPopup(popup_8209e9ad8a634cfab26aa426db46ec88);
+
+            
+        
+    
+
+            var circle_marker_a969bf1c4e474ef0b7c18dfcd1c55336 = L.circleMarker(
+                [48.35733,-96.332773],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#b44b00',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_c9fd24148fee4211a88a1840e9fb30e3 = L.popup({maxWidth: '300'});
+
+            
+                var html_8ae6baacc79d431f91f8c35a1a5efd8b = $('<div id="html_8ae6baacc79d431f91f8c35a1a5efd8b" style="width: 100.0%; height: 100.0%;">MCC Weather Station:25.44</div>')[0];
+                popup_c9fd24148fee4211a88a1840e9fb30e3.setContent(html_8ae6baacc79d431f91f8c35a1a5efd8b);
+            
+
+            circle_marker_a969bf1c4e474ef0b7c18dfcd1c55336.bindPopup(popup_c9fd24148fee4211a88a1840e9fb30e3);
+
+            
+        
+    
+
+            var circle_marker_7ffe87287ac2442190fc81f25dc68dfc = L.circleMarker(
+                [41.619282,-87.047304],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#bd4200',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_946cecb3f3c440658393a8114b6104c2 = L.popup({maxWidth: '300'});
+
+            
+                var html_14673ddc2b3d4c02908ac77ce4cc712e = $('<div id="html_14673ddc2b3d4c02908ac77ce4cc712e" style="width: 100.0%; height: 100.0%;">Indiana Irish Weather:24.27</div>')[0];
+                popup_946cecb3f3c440658393a8114b6104c2.setContent(html_14673ddc2b3d4c02908ac77ce4cc712e);
+            
+
+            circle_marker_7ffe87287ac2442190fc81f25dc68dfc.bindPopup(popup_946cecb3f3c440658393a8114b6104c2);
+
+            
+        
+    
+
+            var circle_marker_22c3cf5476284b81a873ca8424ff8945 = L.circleMarker(
+                [39.624921,22.417742],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#ab5400',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_77a97e338c4649a297f6374dd0509ca6 = L.popup({maxWidth: '300'});
+
+            
+                var html_33f83e22804e4127b0c4dc0e5bb61eb3 = $('<div id="html_33f83e22804e4127b0c4dc0e5bb61eb3" style="width: 100.0%; height: 100.0%;">Anthoupoli Larissa Weather Station:26.53</div>')[0];
+                popup_77a97e338c4649a297f6374dd0509ca6.setContent(html_33f83e22804e4127b0c4dc0e5bb61eb3);
+            
+
+            circle_marker_22c3cf5476284b81a873ca8424ff8945.bindPopup(popup_77a97e338c4649a297f6374dd0509ca6);
+
+            
+        
+    
+
+            var circle_marker_f3aa9a08eccd4cce84ca4cbdf9b3b700 = L.circleMarker(
+                [55.895506,21.24547],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#8b7400',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_54c7e356e4b44b2abc9ca4fb576e8c8b = L.popup({maxWidth: '300'});
+
+            
+                var html_c692e9017f9b466687f46b82d3db51de = $('<div id="html_c692e9017f9b466687f46b82d3db51de" style="width: 100.0%; height: 100.0%;">Kretinga Vilniaus g. 12:30.59</div>')[0];
+                popup_54c7e356e4b44b2abc9ca4fb576e8c8b.setContent(html_c692e9017f9b466687f46b82d3db51de);
+            
+
+            circle_marker_f3aa9a08eccd4cce84ca4cbdf9b3b700.bindPopup(popup_54c7e356e4b44b2abc9ca4fb576e8c8b);
+
+            
+        
+    
+
+            var circle_marker_87652891078e48e49df99a0d3c479574 = L.circleMarker(
+                [47.125393,10.513063],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#6b9400',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_89ddde5c17574f5d95d7ec681c57773b = L.popup({maxWidth: '300'});
+
+            
+                var html_0db84f42d8254ff795060324b094991b = $('<div id="html_0db84f42d8254ff795060324b094991b" style="width: 100.0%; height: 100.0%;">Tobadill Wetter:34.65</div>')[0];
+                popup_89ddde5c17574f5d95d7ec681c57773b.setContent(html_0db84f42d8254ff795060324b094991b);
+            
+
+            circle_marker_87652891078e48e49df99a0d3c479574.bindPopup(popup_89ddde5c17574f5d95d7ec681c57773b);
+
+            
+        
+    
+
+            var circle_marker_941d54b9b10d4d6ea50bed19314e59ed = L.circleMarker(
+                [40.751605,-111.862931],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#b74800',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_7964a766a17741b7bb2007df5fa95bd2 = L.popup({maxWidth: '300'});
+
+            
+                var html_016ff21d5cb24d48a0bb23dff9a88915 = $('<div id="html_016ff21d5cb24d48a0bb23dff9a88915" style="width: 100.0%; height: 100.0%;">Rowland Hall Station:25.08</div>')[0];
+                popup_7964a766a17741b7bb2007df5fa95bd2.setContent(html_016ff21d5cb24d48a0bb23dff9a88915);
+            
+
+            circle_marker_941d54b9b10d4d6ea50bed19314e59ed.bindPopup(popup_7964a766a17741b7bb2007df5fa95bd2);
+
+            
+        
+    
+
+            var circle_marker_41326c0ec2054f74b2cc5a45f519b77b = L.circleMarker(
+                [28.130489,-15.439377],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#b14e00',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_ec2606d9c03845c9b62dc03fc3c6cf83 = L.popup({maxWidth: '300'});
+
+            
+                var html_d4f7c4caa2844f0280a9ceca7dd5a902 = $('<div id="html_d4f7c4caa2844f0280a9ceca7dd5a902" style="width: 100.0%; height: 100.0%;">IES Mesa y Lopez:25.78</div>')[0];
+                popup_ec2606d9c03845c9b62dc03fc3c6cf83.setContent(html_d4f7c4caa2844f0280a9ceca7dd5a902);
+            
+
+            circle_marker_41326c0ec2054f74b2cc5a45f519b77b.bindPopup(popup_ec2606d9c03845c9b62dc03fc3c6cf83);
+
+            
+        
+    
+
+            var circle_marker_47a004804a4e4532b3fb6821955f7c21 = L.circleMarker(
+                [37.872082,23.825658],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#a05f00',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_1bf7e59e9a4b4c08b70e9b189cfb36c4 = L.popup({maxWidth: '300'});
+
+            
+                var html_4308bef751c344879d9999549c93589a = $('<div id="html_4308bef751c344879d9999549c93589a" style="width: 100.0%; height: 100.0%;">GeitonasMeteo:28</div>')[0];
+                popup_1bf7e59e9a4b4c08b70e9b189cfb36c4.setContent(html_4308bef751c344879d9999549c93589a);
+            
+
+            circle_marker_47a004804a4e4532b3fb6821955f7c21.bindPopup(popup_1bf7e59e9a4b4c08b70e9b189cfb36c4);
+
+            
+        
+    
+
+            var circle_marker_490b19eb5724449a9c227a6a5658cab1 = L.circleMarker(
+                [-26.772477,153.117912],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#f00f00',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_25507154a9ae456486738ce1ea19888d = L.popup({maxWidth: '300'});
+
+            
+                var html_8193e661c9124279ac224c2d4885a02c = $('<div id="html_8193e661c9124279ac224c2d4885a02c" style="width: 100.0%; height: 100.0%;">Talara Primary College:17.84</div>')[0];
+                popup_25507154a9ae456486738ce1ea19888d.setContent(html_8193e661c9124279ac224c2d4885a02c);
+            
+
+            circle_marker_490b19eb5724449a9c227a6a5658cab1.bindPopup(popup_25507154a9ae456486738ce1ea19888d);
+
+            
+        
+    
+
+            var circle_marker_c7e0578204db4b3e91c6506d59e21629 = L.circleMarker(
+                [53.26366,7.92705],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#738c00',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_8e408f851f474080a655d45b3fdfb800 = L.popup({maxWidth: '300'});
+
+            
+                var html_8516b41563374f7fae514aa51682d546 = $('<div id="html_8516b41563374f7fae514aa51682d546" style="width: 100.0%; height: 100.0%;">Robert-Dannemann Schule Westerstede:33.62</div>')[0];
+                popup_8e408f851f474080a655d45b3fdfb800.setContent(html_8516b41563374f7fae514aa51682d546);
+            
+
+            circle_marker_c7e0578204db4b3e91c6506d59e21629.bindPopup(popup_8e408f851f474080a655d45b3fdfb800);
+
+            
+        
+    
+
+            var circle_marker_b2ead1b0393045f6a4305d7cd3e49e8f = L.circleMarker(
+                [50.773295,15.072168],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#9b6400',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_18f32f3e63c44880ba3d4149b96e2325 = L.popup({maxWidth: '300'});
+
+            
+                var html_3e25bf298c9c465aba6b0179183088e2 = $('<div id="html_3e25bf298c9c465aba6b0179183088e2" style="width: 100.0%; height: 100.0%;">TUL1:28.62</div>')[0];
+                popup_18f32f3e63c44880ba3d4149b96e2325.setContent(html_3e25bf298c9c465aba6b0179183088e2);
+            
+
+            circle_marker_b2ead1b0393045f6a4305d7cd3e49e8f.bindPopup(popup_18f32f3e63c44880ba3d4149b96e2325);
+
+            
+        
+    
+
+            var circle_marker_6fcf9a6ae0444d0aa87ff447e3c5b4d8 = L.circleMarker(
+                [37.364973,-79.281592],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#aa5500',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_d52c6fdaedbb4ea6a735495f4422028f = L.popup({maxWidth: '300'});
+
+            
+                var html_4543ba07f889478d97c7ba60530d5867 = $('<div id="html_4543ba07f889478d97c7ba60530d5867" style="width: 100.0%; height: 100.0%;">FMSWX:26.68</div>')[0];
+                popup_d52c6fdaedbb4ea6a735495f4422028f.setContent(html_4543ba07f889478d97c7ba60530d5867);
+            
+
+            circle_marker_6fcf9a6ae0444d0aa87ff447e3c5b4d8.bindPopup(popup_d52c6fdaedbb4ea6a735495f4422028f);
+
+            
+        
+    
+
+            var circle_marker_5830d573a2d448539a78c0b4f267637b = L.circleMarker(
+                [53.201521,-8.129816],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#ad5200',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_5f07435e3d444411bae9a245d0012b88 = L.popup({maxWidth: '300'});
+
+            
+                var html_3cc879847f6847089694fe39dc077a2a = $('<div id="html_3cc879847f6847089694fe39dc077a2a" style="width: 100.0%; height: 100.0%;">Eyrecourt National School:26.36</div>')[0];
+                popup_5f07435e3d444411bae9a245d0012b88.setContent(html_3cc879847f6847089694fe39dc077a2a);
+            
+
+            circle_marker_5830d573a2d448539a78c0b4f267637b.bindPopup(popup_5f07435e3d444411bae9a245d0012b88);
+
+            
+        
+    
+
+            var circle_marker_5d0db44e7c364c74bcc02dbadf4f11dd = L.circleMarker(
+                [38.040429,23.693743],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#906f00',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_dbc9c407f8484118afb7b59371520417 = L.popup({maxWidth: '300'});
+
+            
+                var html_e4d3fd76e77d46518e78628ee2862485 = $('<div id="html_e4d3fd76e77d46518e78628ee2862485" style="width: 100.0%; height: 100.0%;">Petroupolis Weather Station:29.93</div>')[0];
+                popup_dbc9c407f8484118afb7b59371520417.setContent(html_e4d3fd76e77d46518e78628ee2862485);
+            
+
+            circle_marker_5d0db44e7c364c74bcc02dbadf4f11dd.bindPopup(popup_dbc9c407f8484118afb7b59371520417);
+
+            
+        
+    
+
+            var circle_marker_5268c0acf90847f8be1845dcd267c8e2 = L.circleMarker(
+                [37.834359,23.795291],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#d02f00',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_030a565b5f2841ec80772a30b6790cfd = L.popup({maxWidth: '300'});
+
+            
+                var html_f0ec677842db43e39b740f285f6c5947 = $('<div id="html_f0ec677842db43e39b740f285f6c5947" style="width: 100.0%; height: 100.0%;">IRIS_VARI:21.85</div>')[0];
+                popup_030a565b5f2841ec80772a30b6790cfd.setContent(html_f0ec677842db43e39b740f285f6c5947);
+            
+
+            circle_marker_5268c0acf90847f8be1845dcd267c8e2.bindPopup(popup_030a565b5f2841ec80772a30b6790cfd);
+
+            
+        
+    
+
+            var circle_marker_46a13e3a25cd42e0b2d9821dd6e644d7 = L.circleMarker(
+                [43.774612,11.196697],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#9a6500',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_2776ac3887e44c71af371253ec7ac4fb = L.popup({maxWidth: '300'});
+
+            
+                var html_c4f7c8956ed04f6888bd21e8f385535f = $('<div id="html_c4f7c8956ed04f6888bd21e8f385535f" style="width: 100.0%; height: 100.0%;">Stazione Meteo Marco Polo:28.71</div>')[0];
+                popup_2776ac3887e44c71af371253ec7ac4fb.setContent(html_c4f7c8956ed04f6888bd21e8f385535f);
+            
+
+            circle_marker_46a13e3a25cd42e0b2d9821dd6e644d7.bindPopup(popup_2776ac3887e44c71af371253ec7ac4fb);
+
+            
+        
+    
+
+            var circle_marker_53db73b33e024f6cbcd9c0df86e4ce3a = L.circleMarker(
+                [53.73273,2.76704],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#aa5500',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_30e8716d5b1c46cd9783cc66b3fd8cdd = L.popup({maxWidth: '300'});
+
+            
+                var html_c0a8139f79c148998360cb33f31a96dc = $('<div id="html_c0a8139f79c148998360cb33f31a96dc" style="width: 100.0%; height: 100.0%;">Hutton Grammar School:26.66</div>')[0];
+                popup_30e8716d5b1c46cd9783cc66b3fd8cdd.setContent(html_c0a8139f79c148998360cb33f31a96dc);
+            
+
+            circle_marker_53db73b33e024f6cbcd9c0df86e4ce3a.bindPopup(popup_30e8716d5b1c46cd9783cc66b3fd8cdd);
+
+            
+        
+    
+
+            var circle_marker_03ff4c7396fb4865a3b21a5907212e02 = L.circleMarker(
+                [47.354681,7.912147],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#e61900',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_5b147656630d4139bafcea66f359f60e = L.popup({maxWidth: '300'});
+
+            
+                var html_5234d0fc0ebb4d099a830f7c02603442 = $('<div id="html_5234d0fc0ebb4d099a830f7c02603442" style="width: 100.0%; height: 100.0%;">Kantonsschule Olten:19.1</div>')[0];
+                popup_5b147656630d4139bafcea66f359f60e.setContent(html_5234d0fc0ebb4d099a830f7c02603442);
+            
+
+            circle_marker_03ff4c7396fb4865a3b21a5907212e02.bindPopup(popup_5b147656630d4139bafcea66f359f60e);
+
+            
+        
+    
+
+            var circle_marker_c8210c1349f641568d995a1961cc2cb3 = L.circleMarker(
+                [35.24589,24.41194],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#857a00',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_ff5f3bad76b14ed389e432e938385fce = L.popup({maxWidth: '300'});
+
+            
+                var html_b506ba21619d4ba893c29bdb83c7cbc0 = $('<div id="html_b506ba21619d4ba893c29bdb83c7cbc0" style="width: 100.0%; height: 100.0%;">Panormo Crete:31.44</div>')[0];
+                popup_ff5f3bad76b14ed389e432e938385fce.setContent(html_b506ba21619d4ba893c29bdb83c7cbc0);
+            
+
+            circle_marker_c8210c1349f641568d995a1961cc2cb3.bindPopup(popup_ff5f3bad76b14ed389e432e938385fce);
+
+            
+        
+    
+
+            var circle_marker_ec43ce80c2124c07b6c6c411a4200892 = L.circleMarker(
+                [51.298789,1.070073],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#d62900',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_737803fe4e2b45248d7c761289160d06 = L.popup({maxWidth: '300'});
+
+            
+                var html_c0ed9c1b4a064631b8719a637f2135e2 = $('<div id="html_c0ed9c1b4a064631b8719a637f2135e2" style="width: 100.0%; height: 100.0%;">CS-UniKent-01:21.09</div>')[0];
+                popup_737803fe4e2b45248d7c761289160d06.setContent(html_c0ed9c1b4a064631b8719a637f2135e2);
+            
+
+            circle_marker_ec43ce80c2124c07b6c6c411a4200892.bindPopup(popup_737803fe4e2b45248d7c761289160d06);
+
+            
+        
+    
+
+            var circle_marker_add531a0befe4ce4a7824ee095b56cb8 = L.circleMarker(
+                [51.503731,3.900181],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#cf0030',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_2a60913409ff4bdfb5d974abc231925e = L.popup({maxWidth: '300'});
+
+            
+                var html_5b4219e90ef54ef6a54d3f68562359e5 = $('<div id="html_5b4219e90ef54ef6a54d3f68562359e5" style="width: 100.0%; height: 100.0%;">Maarten-1:9.83</div>')[0];
+                popup_2a60913409ff4bdfb5d974abc231925e.setContent(html_5b4219e90ef54ef6a54d3f68562359e5);
+            
+
+            circle_marker_add531a0befe4ce4a7824ee095b56cb8.bindPopup(popup_2a60913409ff4bdfb5d974abc231925e);
+
+            
+        
+    
+
+            var circle_marker_6d6b088c9b624582a1d32c58eccd6be3 = L.circleMarker(
+                [39.449652,-75.692097],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#966900',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_ec464b9403f44aa59a938643958ead2c = L.popup({maxWidth: '300'});
+
+            
+                var html_daa3550fce304d01956cb70b2bee332d = $('<div id="html_daa3550fce304d01956cb70b2bee332d" style="width: 100.0%; height: 100.0%;">Middletown HS Weather Station:29.2</div>')[0];
+                popup_ec464b9403f44aa59a938643958ead2c.setContent(html_daa3550fce304d01956cb70b2bee332d);
+            
+
+            circle_marker_6d6b088c9b624582a1d32c58eccd6be3.bindPopup(popup_ec464b9403f44aa59a938643958ead2c);
+
+            
+        
+    
+
+            var circle_marker_477dd543460b4339a65540b4f9d3ec8a = L.circleMarker(
+                [51.272247,-114.016668],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#5da200',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_a15ceb990a2b4819b649a6e69f1e3880 = L.popup({maxWidth: '300'});
+
+            
+                var html_800a2f34a162429abdbf76cb01dcd365 = $('<div id="html_800a2f34a162429abdbf76cb01dcd365" style="width: 100.0%; height: 100.0%;">St. Martin:36.45</div>')[0];
+                popup_a15ceb990a2b4819b649a6e69f1e3880.setContent(html_800a2f34a162429abdbf76cb01dcd365);
+            
+
+            circle_marker_477dd543460b4339a65540b4f9d3ec8a.bindPopup(popup_a15ceb990a2b4819b649a6e69f1e3880);
+
+            
+        
+    
+
+            var circle_marker_d72bdff5bd3b4b3ba08c1d3c9a2711f8 = L.circleMarker(
+                [40.655077,22.995375],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#bd4200',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_89084035392b41afad23e13a3622c67b = L.popup({maxWidth: '300'});
+
+            
+                var html_f61be4d84b81457e8b38d45b4784a878 = $('<div id="html_f61be4d84b81457e8b38d45b4784a878" style="width: 100.0%; height: 100.0%;">DeLaSalleMeteo:24.35</div>')[0];
+                popup_89084035392b41afad23e13a3622c67b.setContent(html_f61be4d84b81457e8b38d45b4784a878);
+            
+
+            circle_marker_d72bdff5bd3b4b3ba08c1d3c9a2711f8.bindPopup(popup_89084035392b41afad23e13a3622c67b);
+
+            
+        
+    
+
+            var circle_marker_0febb164b0654d5eb715ea15c8ff0e3e = L.circleMarker(
+                [40.68125,-75.724205],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#d52a00',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_23e19126b6de48a19e608379d92ac8f2 = L.popup({maxWidth: '300'});
+
+            
+                var html_8d9f038d300e4c9ca83d84bb5eac0548 = $('<div id="html_8d9f038d300e4c9ca83d84bb5eac0548" style="width: 100.0%; height: 100.0%;">NWL RasPi Weather Station:21.24</div>')[0];
+                popup_23e19126b6de48a19e608379d92ac8f2.setContent(html_8d9f038d300e4c9ca83d84bb5eac0548);
+            
+
+            circle_marker_0febb164b0654d5eb715ea15c8ff0e3e.bindPopup(popup_23e19126b6de48a19e608379d92ac8f2);
+
+            
+        
+    
+
+            var circle_marker_64797598d7e040e09d68f1d5ecb623da = L.circleMarker(
+                [39.986605,-0.029553],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#ed1200',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_44cca747710e4adc818a6d5fdde0ce89 = L.popup({maxWidth: '300'});
+
+            
+                var html_91e23d0f4e0a46d4898c27dc5058e84b = $('<div id="html_91e23d0f4e0a46d4898c27dc5058e84b" style="width: 100.0%; height: 100.0%;">WeatherPenyagolosa:18.2</div>')[0];
+                popup_44cca747710e4adc818a6d5fdde0ce89.setContent(html_91e23d0f4e0a46d4898c27dc5058e84b);
+            
+
+            circle_marker_64797598d7e040e09d68f1d5ecb623da.bindPopup(popup_44cca747710e4adc818a6d5fdde0ce89);
+
+            
+        
+    
+
+            var circle_marker_03665223eab24a3aa108c5b88df5964b = L.circleMarker(
+                [37.979,-1.118],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#da2500',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_b65e77ac28c0437aaf9f6b618cd117d7 = L.popup({maxWidth: '300'});
+
+            
+                var html_fc570f4ab15742049d9d93882866a970 = $('<div id="html_fc570f4ab15742049d9d93882866a970" style="width: 100.0%; height: 100.0%;">Tiempecico:20.66</div>')[0];
+                popup_b65e77ac28c0437aaf9f6b618cd117d7.setContent(html_fc570f4ab15742049d9d93882866a970);
+            
+
+            circle_marker_03665223eab24a3aa108c5b88df5964b.bindPopup(popup_b65e77ac28c0437aaf9f6b618cd117d7);
+
+            
+        
+    
+
+            var circle_marker_47d6d2a8761040f4b9d1d39d423aa0b4 = L.circleMarker(
+                [40.595883,22.974998],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#837c00',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_bedd3bd5350e4c908f0aac27784db0d4 = L.popup({maxWidth: '300'});
+
+            
+                var html_b83b7c014ad44e569c25151eb47fe235 = $('<div id="html_b83b7c014ad44e569c25151eb47fe235" style="width: 100.0%; height: 100.0%;">2gymchar:31.68</div>')[0];
+                popup_bedd3bd5350e4c908f0aac27784db0d4.setContent(html_b83b7c014ad44e569c25151eb47fe235);
+            
+
+            circle_marker_47d6d2a8761040f4b9d1d39d423aa0b4.bindPopup(popup_bedd3bd5350e4c908f0aac27784db0d4);
+
+            
+        
+    
+
+            var circle_marker_92e3de87bbe344a0866ccc29ea995208 = L.circleMarker(
+                [35.76844,-78.787274],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#ab5400',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_0c03f670bb2343869495dec3877cc803 = L.popup({maxWidth: '300'});
+
+            
+                var html_db64b81a6cf14b79a32bfa98c9b60c76 = $('<div id="html_db64b81a6cf14b79a32bfa98c9b60c76" style="width: 100.0%; height: 100.0%;">Briarcliff:26.58</div>')[0];
+                popup_0c03f670bb2343869495dec3877cc803.setContent(html_db64b81a6cf14b79a32bfa98c9b60c76);
+            
+
+            circle_marker_92e3de87bbe344a0866ccc29ea995208.bindPopup(popup_0c03f670bb2343869495dec3877cc803);
+
+            
+        
+    
+
+            var circle_marker_6fc4f5c378a145c190b742ca72e51aeb = L.circleMarker(
+                [11.018678,-74.847151],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#d62900',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_6a0181a08b8c4b6e8740debf3d7721e5 = L.popup({maxWidth: '300'});
+
+            
+                var html_7fd5631605bd4517af12437339dcfd27 = $('<div id="html_7fd5631605bd4517af12437339dcfd27" style="width: 100.0%; height: 100.0%;">EstacionUninorte:21.1</div>')[0];
+                popup_6a0181a08b8c4b6e8740debf3d7721e5.setContent(html_7fd5631605bd4517af12437339dcfd27);
+            
+
+            circle_marker_6fc4f5c378a145c190b742ca72e51aeb.bindPopup(popup_6a0181a08b8c4b6e8740debf3d7721e5);
+
+            
+        
+    
+
+            var circle_marker_378f2d2565d34159b2f9f398b15e1d15 = L.circleMarker(
+                [42.649077,23.336631],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#a55a00',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_92b161d6a88f44e7ac9b0ecca6ebf36e = L.popup({maxWidth: '300'});
+
+            
+                var html_086e2b688a0149bfb46005810f717c59 = $('<div id="html_086e2b688a0149bfb46005810f717c59" style="width: 100.0%; height: 100.0%;">svetlina:27.3</div>')[0];
+                popup_92b161d6a88f44e7ac9b0ecca6ebf36e.setContent(html_086e2b688a0149bfb46005810f717c59);
+            
+
+            circle_marker_378f2d2565d34159b2f9f398b15e1d15.bindPopup(popup_92b161d6a88f44e7ac9b0ecca6ebf36e);
+
+            
+        
+    
+
+            var circle_marker_5513d3e4c34d453ea10ea98b9dcf9f1b = L.circleMarker(
+                [37.970548,23.694588],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#c63900',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_15d4dc8973934dc880035c99b25c8e6a = L.popup({maxWidth: '300'});
+
+            
+                var html_db9719a12f9d4ce7b8f6cbab60d70493 = $('<div id="html_db9719a12f9d4ce7b8f6cbab60d70493" style="width: 100.0%; height: 100.0%;">Zephyrus:23.18</div>')[0];
+                popup_15d4dc8973934dc880035c99b25c8e6a.setContent(html_db9719a12f9d4ce7b8f6cbab60d70493);
+            
+
+            circle_marker_5513d3e4c34d453ea10ea98b9dcf9f1b.bindPopup(popup_15d4dc8973934dc880035c99b25c8e6a);
+
+            
+        
+    
+
+            var circle_marker_6d8130c490db40ef87bfcbf9b2a2f168 = L.circleMarker(
+                [29.003875,-80.929284],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#ac5300',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_6da385e048314cb5b7b052c85cd3b82e = L.popup({maxWidth: '300'});
+
+            
+                var html_ad93bb60f7bf4072b14ba518b055bf76 = $('<div id="html_ad93bb60f7bf4072b14ba518b055bf76" style="width: 100.0%; height: 100.0%;">Cuda Weather:26.51</div>')[0];
+                popup_6da385e048314cb5b7b052c85cd3b82e.setContent(html_ad93bb60f7bf4072b14ba518b055bf76);
+            
+
+            circle_marker_6d8130c490db40ef87bfcbf9b2a2f168.bindPopup(popup_6da385e048314cb5b7b052c85cd3b82e);
+
+            
+        
+    
+
+            var circle_marker_0c56f62cc58747eb9ba8e48e831c527e = L.circleMarker(
+                [32.76608,-17.215484],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#b14e00',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_3b3cd71f348944b8872d67570d9ab444 = L.popup({maxWidth: '300'});
+
+            
+                var html_4c8687974d70471f8c0344e834b40d76 = $('<div id="html_4c8687974d70471f8c0344e834b40d76" style="width: 100.0%; height: 100.0%;">weather station:25.81</div>')[0];
+                popup_3b3cd71f348944b8872d67570d9ab444.setContent(html_4c8687974d70471f8c0344e834b40d76);
+            
+
+            circle_marker_0c56f62cc58747eb9ba8e48e831c527e.bindPopup(popup_3b3cd71f348944b8872d67570d9ab444);
+
+            
+        
+    
+
+            var circle_marker_69bf8920e22f408b997f8f8f6f8fa3d6 = L.circleMarker(
+                [52.55202,4.686597],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#de0021',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_9f948d92357b42da83a65b3e32079534 = L.popup({maxWidth: '300'});
+
+            
+                var html_91a56067558d414d93af9708a4aa42bc = $('<div id="html_91a56067558d414d93af9708a4aa42bc" style="width: 100.0%; height: 100.0%;">jpthijsse:11.67</div>')[0];
+                popup_9f948d92357b42da83a65b3e32079534.setContent(html_91a56067558d414d93af9708a4aa42bc);
+            
+
+            circle_marker_69bf8920e22f408b997f8f8f6f8fa3d6.bindPopup(popup_9f948d92357b42da83a65b3e32079534);
+
+            
+        
+    
+
+            var circle_marker_197fce7ab04c40b1aec4e66c75ee02b2 = L.circleMarker(
+                [29.729853,-93.897354],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#b64900',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_b6f8008726324a87ad706b03bf8ef18a = L.popup({maxWidth: '300'});
+
+            
+                var html_893fbc94444a4904925a8ba668678bbb = $('<div id="html_893fbc94444a4904925a8ba668678bbb" style="width: 100.0%; height: 100.0%;">Sabine Pass Weather Station:25.14</div>')[0];
+                popup_b6f8008726324a87ad706b03bf8ef18a.setContent(html_893fbc94444a4904925a8ba668678bbb);
+            
+
+            circle_marker_197fce7ab04c40b1aec4e66c75ee02b2.bindPopup(popup_b6f8008726324a87ad706b03bf8ef18a);
+
+            
+        
+    
+
+            var circle_marker_f2434d1b5ea34fafb2393dbbb9653c5c = L.circleMarker(
+                [42.437589,-8.869725],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#cf3000',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_a341ad01aebd4d05bead7c06af546d5f = L.popup({maxWidth: '300'});
+
+            
+                var html_a0297cddbd754ce2bf65609c14bc9bbe = $('<div id="html_a0297cddbd754ce2bf65609c14bc9bbe" style="width: 100.0%; height: 100.0%;">meteonoalla:22.03</div>')[0];
+                popup_a341ad01aebd4d05bead7c06af546d5f.setContent(html_a0297cddbd754ce2bf65609c14bc9bbe);
+            
+
+            circle_marker_f2434d1b5ea34fafb2393dbbb9653c5c.bindPopup(popup_a341ad01aebd4d05bead7c06af546d5f);
+
+            
+        
+    
+
+            var circle_marker_55768a0d6f8a4fad8e2d3608364265ad = L.circleMarker(
+                [48.098884,16.270373],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#7f8000',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_093b1a1251d7479bb7c98f23c42ac3f2 = L.popup({maxWidth: '300'});
+
+            
+                var html_76f3ad4c572f4765a9d60dcf3ef14e7d = $('<div id="html_76f3ad4c572f4765a9d60dcf3ef14e7d" style="width: 100.0%; height: 100.0%;">BRGMERaspi:32.15</div>')[0];
+                popup_093b1a1251d7479bb7c98f23c42ac3f2.setContent(html_76f3ad4c572f4765a9d60dcf3ef14e7d);
+            
+
+            circle_marker_55768a0d6f8a4fad8e2d3608364265ad.bindPopup(popup_093b1a1251d7479bb7c98f23c42ac3f2);
+
+            
+        
+    
+
+            var circle_marker_fa8634294ff047eea7759e98613b00e7 = L.circleMarker(
+                [45.829198,20.468897],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#e60019',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_4301f6cd36c5493a9bfb02f397c2aee4 = L.popup({maxWidth: '300'});
+
+            
+                var html_357030f726744921ac73a93776f3a5ce = $('<div id="html_357030f726744921ac73a93776f3a5ce" style="width: 100.0%; height: 100.0%;">Djura:12.64</div>')[0];
+                popup_4301f6cd36c5493a9bfb02f397c2aee4.setContent(html_357030f726744921ac73a93776f3a5ce);
+            
+
+            circle_marker_fa8634294ff047eea7759e98613b00e7.bindPopup(popup_4301f6cd36c5493a9bfb02f397c2aee4);
+
+            
+        
+    
+
+            var circle_marker_44b2fc4784cf434da1dfb3d0c87b3678 = L.circleMarker(
+                [25.78,77.22],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#689700',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_507c855d627c4f27a0341ac44611e981 = L.popup({maxWidth: '300'});
+
+            
+                var html_a43cff876c3847bbbc15049df290b6fe = $('<div id="html_a43cff876c3847bbbc15049df290b6fe" style="width: 100.0%; height: 100.0%;">MWD in India:35.06</div>')[0];
+                popup_507c855d627c4f27a0341ac44611e981.setContent(html_a43cff876c3847bbbc15049df290b6fe);
+            
+
+            circle_marker_44b2fc4784cf434da1dfb3d0c87b3678.bindPopup(popup_507c855d627c4f27a0341ac44611e981);
+
+            
+        
+    
+
+            var circle_marker_0981b36e806646e39ebf6c9965d1d4df = L.circleMarker(
+                [44.500794,10.942769],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#dd2200',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_c0ac993a88724049a741241370fa7963 = L.popup({maxWidth: '300'});
+
+            
+                var html_e9d74bd4efa348fbaf6f0c57351032c4 = $('<div id="html_e9d74bd4efa348fbaf6f0c57351032c4" style="width: 100.0%; height: 100.0%;">ICC (Italy):20.28</div>')[0];
+                popup_c0ac993a88724049a741241370fa7963.setContent(html_e9d74bd4efa348fbaf6f0c57351032c4);
+            
+
+            circle_marker_0981b36e806646e39ebf6c9965d1d4df.bindPopup(popup_c0ac993a88724049a741241370fa7963);
+
+            
+        
+    
+
+            var circle_marker_c88e359c587542a497b63567275d5236 = L.circleMarker(
+                [53.606139,9.467783],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#d72800',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_4ec5a2489b1c45ce832f3847c9cf13c3 = L.popup({maxWidth: '300'});
+
+            
+                var html_53790a3a92b840d7b12ce10c0fc99b74 = $('<div id="html_53790a3a92b840d7b12ce10c0fc99b74" style="width: 100.0%; height: 100.0%;">VLG-Stade-Pi:21</div>')[0];
+                popup_4ec5a2489b1c45ce832f3847c9cf13c3.setContent(html_53790a3a92b840d7b12ce10c0fc99b74);
+            
+
+            circle_marker_c88e359c587542a497b63567275d5236.bindPopup(popup_4ec5a2489b1c45ce832f3847c9cf13c3);
+
+            
+        
+    
+
+            var circle_marker_f7bf205cb4464bad9b13a9cd398682a8 = L.circleMarker(
+                [4.629829,-74.148614],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#bc4300',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_a0513bf7965f47089895461d1bf1614e = L.popup({maxWidth: '300'});
+
+            
+                var html_b1871dc2ba364a06a78bf97d4ca1b8eb = $('<div id="html_b1871dc2ba364a06a78bf97d4ca1b8eb" style="width: 100.0%; height: 100.0%;">WeatherStation FTRV:24.49</div>')[0];
+                popup_a0513bf7965f47089895461d1bf1614e.setContent(html_b1871dc2ba364a06a78bf97d4ca1b8eb);
+            
+
+            circle_marker_f7bf205cb4464bad9b13a9cd398682a8.bindPopup(popup_a0513bf7965f47089895461d1bf1614e);
+
+            
+        
+    
+
+            var circle_marker_a6866a7d17554084868d72104d2901d8 = L.circleMarker(
+                [28.48,-16.31],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#936c00',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_998bed713bd6441e960abeeb1b4e9442 = L.popup({maxWidth: '300'});
+
+            
+                var html_5bf810d5adb443faab31697ee3ea36c4 = $('<div id="html_5bf810d5adb443faab31697ee3ea36c4" style="width: 100.0%; height: 100.0%;">La Salle La Laguna:29.58</div>')[0];
+                popup_998bed713bd6441e960abeeb1b4e9442.setContent(html_5bf810d5adb443faab31697ee3ea36c4);
+            
+
+            circle_marker_a6866a7d17554084868d72104d2901d8.bindPopup(popup_998bed713bd6441e960abeeb1b4e9442);
+
+            
+        
+    
+
+            var circle_marker_f425b1dca856407c8349643244d64dd6 = L.circleMarker(
+                [35.312219,25.13685],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#897600',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_8d0372f92c4a4524b0e929b323846959 = L.popup({maxWidth: '300'});
+
+            
+                var html_d3ac4b4250af42b1b21b1629f1f09403 = $('<div id="html_d3ac4b4250af42b1b21b1629f1f09403" style="width: 100.0%; height: 100.0%;">5gym-meteo:30.87</div>')[0];
+                popup_8d0372f92c4a4524b0e929b323846959.setContent(html_d3ac4b4250af42b1b21b1629f1f09403);
+            
+
+            circle_marker_f425b1dca856407c8349643244d64dd6.bindPopup(popup_8d0372f92c4a4524b0e929b323846959);
+
+            
+        
+    
+
+            var circle_marker_e42cb3d6682f40329078fa20c6496002 = L.circleMarker(
+                [51.459759,-0.939627],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#b14e00',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_c87d960b99c44f2da46fc0c5499aea26 = L.popup({maxWidth: '300'});
+
+            
+                var html_a6099455ebe44a2fa02a5c9a9e043c9d = $('<div id="html_a6099455ebe44a2fa02a5c9a9e043c9d" style="width: 100.0%; height: 100.0%;">OracleHQ:25.78</div>')[0];
+                popup_c87d960b99c44f2da46fc0c5499aea26.setContent(html_a6099455ebe44a2fa02a5c9a9e043c9d);
+            
+
+            circle_marker_e42cb3d6682f40329078fa20c6496002.bindPopup(popup_c87d960b99c44f2da46fc0c5499aea26);
+
+            
+        
+    
+
+            var circle_marker_8a3215b600414c98bcdc7f8c00b90bd7 = L.circleMarker(
+                [18.712247,98.999583],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#b74800',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_7a776f02eebc40a5a3ee379d4c70a32e = L.popup({maxWidth: '300'});
+
+            
+                var html_57bb9f1bf5284a2a80dfb7e33ce7061d = $('<div id="html_57bb9f1bf5284a2a80dfb7e33ce7061d" style="width: 100.0%; height: 100.0%;">CDSC1:25.03</div>')[0];
+                popup_7a776f02eebc40a5a3ee379d4c70a32e.setContent(html_57bb9f1bf5284a2a80dfb7e33ce7061d);
+            
+
+            circle_marker_8a3215b600414c98bcdc7f8c00b90bd7.bindPopup(popup_7a776f02eebc40a5a3ee379d4c70a32e);
+
+            
+        
+    
+
+            var circle_marker_534ae2e97d4e4786921ee63e22ed526f = L.circleMarker(
+                [49.3479,-123.184529],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#926d00',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_ba7a2af53e064a93b69d8c59d0f323d4 = L.popup({maxWidth: '300'});
+
+            
+                var html_4b3bcdc7034a43efaee12712775f4685 = $('<div id="html_4b3bcdc7034a43efaee12712775f4685" style="width: 100.0%; height: 100.0%;">Collingwood School:29.8</div>')[0];
+                popup_ba7a2af53e064a93b69d8c59d0f323d4.setContent(html_4b3bcdc7034a43efaee12712775f4685);
+            
+
+            circle_marker_534ae2e97d4e4786921ee63e22ed526f.bindPopup(popup_ba7a2af53e064a93b69d8c59d0f323d4);
+
+            
+        
+    
+
+            var circle_marker_e6a20ef03bfe4359a0a4b8ba00bc566b = L.circleMarker(
+                [38.598677,-9.096835],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#ce3100',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_28dcd6e779224d3daa25cdb80a8a2bb9 = L.popup({maxWidth: '300'});
+
+            
+                var html_20b170ad90d647e9b3ee055b52c6ff90 = $('<div id="html_20b170ad90d647e9b3ee055b52c6ff90" style="width: 100.0%; height: 100.0%;">Colegio Atlantico:22.21</div>')[0];
+                popup_28dcd6e779224d3daa25cdb80a8a2bb9.setContent(html_20b170ad90d647e9b3ee055b52c6ff90);
+            
+
+            circle_marker_e6a20ef03bfe4359a0a4b8ba00bc566b.bindPopup(popup_28dcd6e779224d3daa25cdb80a8a2bb9);
+
+            
+        
+    
+
+            var circle_marker_44b6ccb515074570b1fc7cb746137155 = L.circleMarker(
+                [37.566441,22.799358],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#7f8000',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_774433c0feb54951857f2fa0a6fb139f = L.popup({maxWidth: '300'});
+
+            
+                var html_a078522f8c5a4b0cbc555359a88d4c60 = $('<div id="html_a078522f8c5a4b0cbc555359a88d4c60" style="width: 100.0%; height: 100.0%;">Esperino Nafplio Weather Station:32.18</div>')[0];
+                popup_774433c0feb54951857f2fa0a6fb139f.setContent(html_a078522f8c5a4b0cbc555359a88d4c60);
+            
+
+            circle_marker_44b6ccb515074570b1fc7cb746137155.bindPopup(popup_774433c0feb54951857f2fa0a6fb139f);
+
+            
+        
+    
+
+            var circle_marker_05a14014685241b68697bc21910ab689 = L.circleMarker(
+                [49.337148,-123.161068],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#d80027',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_a7f4870222654ce7958154c8b4ab1c2a = L.popup({maxWidth: '300'});
+
+            
+                var html_7584b60b228341bcb3dde3ed79d24c64 = $('<div id="html_7584b60b228341bcb3dde3ed79d24c64" style="width: 100.0%; height: 100.0%;">WVSSWeather:10.96</div>')[0];
+                popup_a7f4870222654ce7958154c8b4ab1c2a.setContent(html_7584b60b228341bcb3dde3ed79d24c64);
+            
+
+            circle_marker_05a14014685241b68697bc21910ab689.bindPopup(popup_a7f4870222654ce7958154c8b4ab1c2a);
+
+            
+        
+    
+
+            var circle_marker_ddf0b371b26f4cca83cb8a3eaa434b14 = L.circleMarker(
+                [46.851525,-71.424587],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#b24d00',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_61cb3204823f4d2a9939b2b56ea547e1 = L.popup({maxWidth: '300'});
+
+            
+                var html_667cc652dd3c4843b71680c6e080ee5a = $('<div id="html_667cc652dd3c4843b71680c6e080ee5a" style="width: 100.0%; height: 100.0%;">SLI-Weather:25.65</div>')[0];
+                popup_61cb3204823f4d2a9939b2b56ea547e1.setContent(html_667cc652dd3c4843b71680c6e080ee5a);
+            
+
+            circle_marker_ddf0b371b26f4cca83cb8a3eaa434b14.bindPopup(popup_61cb3204823f4d2a9939b2b56ea547e1);
+
+            
+        
+    
+
+            var circle_marker_790e65c15b9b4e4bad03f2e4d68e1b03 = L.circleMarker(
+                [39.181796,-84.36644],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#c13e00',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_adcbf0dbea664c2aa7d8d51c95a87bf7 = L.popup({maxWidth: '300'});
+
+            
+                var html_05a8d6fc4cf74cc7a0bf3a74af710c6c = $('<div id="html_05a8d6fc4cf74cc7a0bf3a74af710c6c" style="width: 100.0%; height: 100.0%;">SGS Chicken:23.82</div>')[0];
+                popup_adcbf0dbea664c2aa7d8d51c95a87bf7.setContent(html_05a8d6fc4cf74cc7a0bf3a74af710c6c);
+            
+
+            circle_marker_790e65c15b9b4e4bad03f2e4d68e1b03.bindPopup(popup_adcbf0dbea664c2aa7d8d51c95a87bf7);
+
+            
+        
+    
+
+            var circle_marker_fe92d16028cd40b49ffebf7fe477829f = L.circleMarker(
+                [44.449412,-92.266844],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#a85700',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_8300c7678b9e462dba16d07ebc10a525 = L.popup({maxWidth: '300'});
+
+            
+                var html_20ec46e4ce99408d86c744a19d9f203f = $('<div id="html_20ec46e4ce99408d86c744a19d9f203f" style="width: 100.0%; height: 100.0%;">Lake City Lincoln High School:26.91</div>')[0];
+                popup_8300c7678b9e462dba16d07ebc10a525.setContent(html_20ec46e4ce99408d86c744a19d9f203f);
+            
+
+            circle_marker_fe92d16028cd40b49ffebf7fe477829f.bindPopup(popup_8300c7678b9e462dba16d07ebc10a525);
+
+            
+        
+    
+
+            var circle_marker_f139a7403efb4ffdbde5ca04624c2b08 = L.circleMarker(
+                [1.293592,103.81238],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#df2000',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_b1324332037242cd84a75f4acd1e29fa = L.popup({maxWidth: '300'});
+
+            
+                var html_a546bbbfe6cf4ddfa96c7eaa1913f6a5 = $('<div id="html_a546bbbfe6cf4ddfa96c7eaa1913f6a5" style="width: 100.0%; height: 100.0%;">QTSS Weather Station:20</div>')[0];
+                popup_b1324332037242cd84a75f4acd1e29fa.setContent(html_a546bbbfe6cf4ddfa96c7eaa1913f6a5);
+            
+
+            circle_marker_f139a7403efb4ffdbde5ca04624c2b08.bindPopup(popup_b1324332037242cd84a75f4acd1e29fa);
+
+            
+        
+    
+
+            var circle_marker_e2f316ed917040d7a7669873551002c8 = L.circleMarker(
+                [38.114566,23.769887],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#8a7500',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_03f3d62b0c5e408f942a9b617266ab34 = L.popup({maxWidth: '300'});
+
+            
+                var html_17b345a06f8f4ef181ae830e74bf7db5 = $('<div id="html_17b345a06f8f4ef181ae830e74bf7db5" style="width: 100.0%; height: 100.0%;">weather-26dim-01:30.74</div>')[0];
+                popup_03f3d62b0c5e408f942a9b617266ab34.setContent(html_17b345a06f8f4ef181ae830e74bf7db5);
+            
+
+            circle_marker_e2f316ed917040d7a7669873551002c8.bindPopup(popup_03f3d62b0c5e408f942a9b617266ab34);
+
+            
+        
+    
+
+            var circle_marker_a2140ee6dd8946e7a44d994fcc474b6f = L.circleMarker(
+                [36.958631,26.963872],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#857a00',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_1baefbbd1bc54badae14f72569420cdc = L.popup({maxWidth: '300'});
+
+            
+                var html_e4e98f83f84b4d78b35188a14a2ed8a5 = $('<div id="html_e4e98f83f84b4d78b35188a14a2ed8a5" style="width: 100.0%; height: 100.0%;">Epal Kalymnou Weather Station:31.39</div>')[0];
+                popup_1baefbbd1bc54badae14f72569420cdc.setContent(html_e4e98f83f84b4d78b35188a14a2ed8a5);
+            
+
+            circle_marker_a2140ee6dd8946e7a44d994fcc474b6f.bindPopup(popup_1baefbbd1bc54badae14f72569420cdc);
+
+            
+        
+    
+
+            var circle_marker_0cd9b51453b54e3fa3652d1c7133c923 = L.circleMarker(
+                [51.899058,-2.076119],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#8a7500',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_763b26262967414492dc8aaf4f36e7ee = L.popup({maxWidth: '300'});
+
+            
+                var html_dbb1a3a3a0b646c3ac615d7615c5ae7b = $('<div id="html_dbb1a3a3a0b646c3ac615d7615c5ae7b" style="width: 100.0%; height: 100.0%;">Wallace:30.75</div>')[0];
+                popup_763b26262967414492dc8aaf4f36e7ee.setContent(html_dbb1a3a3a0b646c3ac615d7615c5ae7b);
+            
+
+            circle_marker_0cd9b51453b54e3fa3652d1c7133c923.bindPopup(popup_763b26262967414492dc8aaf4f36e7ee);
+
+            
+        
+    
+
+            var circle_marker_a8d4b3fc19a24659a3fc9da4f0e9540b = L.circleMarker(
+                [36.823041,21.705036],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#a25d00',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_23497d39134940d683eb1abaa19fb69e = L.popup({maxWidth: '300'});
+
+            
+                var html_fba6a061632f44709a1d55a0b8a9aa4d = $('<div id="html_fba6a061632f44709a1d55a0b8a9aa4d" style="width: 100.0%; height: 100.0%;">Methoni_station:27.75</div>')[0];
+                popup_23497d39134940d683eb1abaa19fb69e.setContent(html_fba6a061632f44709a1d55a0b8a9aa4d);
+            
+
+            circle_marker_a8d4b3fc19a24659a3fc9da4f0e9540b.bindPopup(popup_23497d39134940d683eb1abaa19fb69e);
+
+            
+        
+    
+
+            var circle_marker_8489991db6684cff81696353d7c2f05d = L.circleMarker(
+                [43.4483,79.78355],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#a85700',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_486252a46b7b40e48e938f577c640852 = L.popup({maxWidth: '300'});
+
+            
+                var html_76148b3e955049df9c50dd2aa1aef87f = $('<div id="html_76148b3e955049df9c50dd2aa1aef87f" style="width: 100.0%; height: 100.0%;">Crusaders:26.99</div>')[0];
+                popup_486252a46b7b40e48e938f577c640852.setContent(html_76148b3e955049df9c50dd2aa1aef87f);
+            
+
+            circle_marker_8489991db6684cff81696353d7c2f05d.bindPopup(popup_486252a46b7b40e48e938f577c640852);
+
+            
+        
+    
+
+            var circle_marker_1f119936a48f46fa8c05d98f9cc96c95 = L.circleMarker(
+                [45.526646,-122.693621],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#e60019',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_ace89897d6b848d98d37442b1f8525ca = L.popup({maxWidth: '300'});
+
+            
+                var html_b1ee3942d89d48a48048e3ddda1b7c0a = $('<div id="html_b1ee3942d89d48a48048e3ddda1b7c0a" style="width: 100.0%; height: 100.0%;">metropolitan learning center:12.63</div>')[0];
+                popup_ace89897d6b848d98d37442b1f8525ca.setContent(html_b1ee3942d89d48a48048e3ddda1b7c0a);
+            
+
+            circle_marker_1f119936a48f46fa8c05d98f9cc96c95.bindPopup(popup_ace89897d6b848d98d37442b1f8525ca);
+
+            
+        
+    
+
+            var circle_marker_007c665defc0407f9f8b6c08362174eb = L.circleMarker(
+                [-90,-180],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#cb3400',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_fa214521ace44af5999b286121f1edff = L.popup({maxWidth: '300'});
+
+            
+                var html_736f397052c94e9a913aa0a481cbc936 = $('<div id="html_736f397052c94e9a913aa0a481cbc936" style="width: 100.0%; height: 100.0%;">CollegeKarr:22.53</div>')[0];
+                popup_fa214521ace44af5999b286121f1edff.setContent(html_736f397052c94e9a913aa0a481cbc936);
+            
+
+            circle_marker_007c665defc0407f9f8b6c08362174eb.bindPopup(popup_fa214521ace44af5999b286121f1edff);
+
+            
+        
+    
+
+            var circle_marker_901b1613f0164023b66563e0c5f17e31 = L.circleMarker(
+                [-41.19,174.94],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#a95600',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_db599c2b0a364cd7aec10dd8e03e25c9 = L.popup({maxWidth: '300'});
+
+            
+                var html_9b3e583988bf48c0ad56de6d6a81e5d5 = $('<div id="html_9b3e583988bf48c0ad56de6d6a81e5d5" style="width: 100.0%; height: 100.0%;">Naenae College:26.85</div>')[0];
+                popup_db599c2b0a364cd7aec10dd8e03e25c9.setContent(html_9b3e583988bf48c0ad56de6d6a81e5d5);
+            
+
+            circle_marker_901b1613f0164023b66563e0c5f17e31.bindPopup(popup_db599c2b0a364cd7aec10dd8e03e25c9);
+
+            
+        
+    
+
+            var circle_marker_c0829028f84a468dbea8a069ef349222 = L.circleMarker(
+                [53.275787,-6.382476],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#f90600',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_b593aa93f96245f9b814f3961ed9e324 = L.popup({maxWidth: '300'});
+
+            
+                var html_6f358b78f2e74d7fab48dc02fc1e640d = $('<div id="html_6f358b78f2e74d7fab48dc02fc1e640d" style="width: 100.0%; height: 100.0%;">scheart:16.78</div>')[0];
+                popup_b593aa93f96245f9b814f3961ed9e324.setContent(html_6f358b78f2e74d7fab48dc02fc1e640d);
+            
+
+            circle_marker_c0829028f84a468dbea8a069ef349222.bindPopup(popup_b593aa93f96245f9b814f3961ed9e324);
+
+            
+        
+    
+
+            var circle_marker_0538611e77404cbb9c6ad7ebc652bd9a = L.circleMarker(
+                [43.646725,-116.282671],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#dc2300',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_0919292b56004819bdc75a9c683bbe06 = L.popup({maxWidth: '300'});
+
+            
+                var html_d72bd94254914eb48ed1a95f3157cc0a = $('<div id="html_d72bd94254914eb48ed1a95f3157cc0a" style="width: 100.0%; height: 100.0%;">Discovery Elementary:20.36</div>')[0];
+                popup_0919292b56004819bdc75a9c683bbe06.setContent(html_d72bd94254914eb48ed1a95f3157cc0a);
+            
+
+            circle_marker_0538611e77404cbb9c6ad7ebc652bd9a.bindPopup(popup_0919292b56004819bdc75a9c683bbe06);
+
+            
+        
+    
+
+            var circle_marker_033f6a0a491f417c9c11e8d71e1b5152 = L.circleMarker(
+                [43.46992,-3.809037],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#df2000',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_4f7b1e00816f4ca4b799851cca71a38c = L.popup({maxWidth: '300'});
+
+            
+                var html_0ebd6c2ca5f74665add9fad19faaea6c = $('<div id="html_0ebd6c2ca5f74665add9fad19faaea6c" style="width: 100.0%; height: 100.0%;">DGB:20</div>')[0];
+                popup_4f7b1e00816f4ca4b799851cca71a38c.setContent(html_0ebd6c2ca5f74665add9fad19faaea6c);
+            
+
+            circle_marker_033f6a0a491f417c9c11e8d71e1b5152.bindPopup(popup_4f7b1e00816f4ca4b799851cca71a38c);
+
+            
+        
+    
+
+            var circle_marker_c9ebc308f1284583b057371750af8b6d = L.circleMarker(
+                [22.396428,114.109497],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#c43b00',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_81c467ecfe95457db4f6bd4eb1a96543 = L.popup({maxWidth: '300'});
+
+            
+                var html_15f92ba3131044a48de91dd38737530d = $('<div id="html_15f92ba3131044a48de91dd38737530d" style="width: 100.0%; height: 100.0%;">DBS Weather Station:23.4</div>')[0];
+                popup_81c467ecfe95457db4f6bd4eb1a96543.setContent(html_15f92ba3131044a48de91dd38737530d);
+            
+
+            circle_marker_c9ebc308f1284583b057371750af8b6d.bindPopup(popup_81c467ecfe95457db4f6bd4eb1a96543);
+
+            
+        
+    
+
+            var circle_marker_9c3f85b545af43ecb4af4d524337669a = L.circleMarker(
+                [46.815696,-71.316568],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#b24d00',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_a9349f00e7a94a5794cf55dc39bbd41f = L.popup({maxWidth: '300'});
+
+            
+                var html_4e4f2793c2004a35b21b42dd79ddd51f = $('<div id="html_4e4f2793c2004a35b21b42dd79ddd51f" style="width: 100.0%; height: 100.0%;">CamaWeather:25.69</div>')[0];
+                popup_a9349f00e7a94a5794cf55dc39bbd41f.setContent(html_4e4f2793c2004a35b21b42dd79ddd51f);
+            
+
+            circle_marker_9c3f85b545af43ecb4af4d524337669a.bindPopup(popup_a9349f00e7a94a5794cf55dc39bbd41f);
+
+            
+        
+    
+
+            var circle_marker_3dc6bff2576f4fe0af520b225bcd6582 = L.circleMarker(
+                [40.658055,22.921949],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#609f00',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_1811f6cb3bcd4e26aff5196914513d8b = L.popup({maxWidth: '300'});
+
+            
+                var html_a184be2f0ebe4fbda8482d11e8a8dd62 = $('<div id="html_a184be2f0ebe4fbda8482d11e8a8dd62" style="width: 100.0%; height: 100.0%;">Ampelokhpoi Weather Station:36.07</div>')[0];
+                popup_1811f6cb3bcd4e26aff5196914513d8b.setContent(html_a184be2f0ebe4fbda8482d11e8a8dd62);
+            
+
+            circle_marker_3dc6bff2576f4fe0af520b225bcd6582.bindPopup(popup_1811f6cb3bcd4e26aff5196914513d8b);
+
+            
+        
+    
+
+            var circle_marker_3cff0ae17ebe45328fde67ece7a2ecf1 = L.circleMarker(
+                [35.1465,-106.8921],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#ae5100',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_4dcaa98a30c44e43a3513c7121df1eb1 = L.popup({maxWidth: '300'});
+
+            
+                var html_1d9659b08f50496bb0ff1dee460500fd = $('<div id="html_1d9659b08f50496bb0ff1dee460500fd" style="width: 100.0%; height: 100.0%;">Smart Lab WS:26.18</div>')[0];
+                popup_4dcaa98a30c44e43a3513c7121df1eb1.setContent(html_1d9659b08f50496bb0ff1dee460500fd);
+            
+
+            circle_marker_3cff0ae17ebe45328fde67ece7a2ecf1.bindPopup(popup_4dcaa98a30c44e43a3513c7121df1eb1);
+
+            
+        
+    
+
+            var circle_marker_27146aeab9584cfb8c5fdbab7ef26c6d = L.circleMarker(
+                [39.871621,-4.024121],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#c73800',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_399b1c15f5f3492dba9bd47b92fab39d = L.popup({maxWidth: '300'});
+
+            
+                var html_4e6c258743d04c2bb0379fc30795c1fe = $('<div id="html_4e6c258743d04c2bb0379fc30795c1fe" style="width: 100.0%; height: 100.0%;">ieselgreco weather station:23.07</div>')[0];
+                popup_399b1c15f5f3492dba9bd47b92fab39d.setContent(html_4e6c258743d04c2bb0379fc30795c1fe);
+            
+
+            circle_marker_27146aeab9584cfb8c5fdbab7ef26c6d.bindPopup(popup_399b1c15f5f3492dba9bd47b92fab39d);
+
+            
+        
+    
+
+            var circle_marker_3e632578accb4bbca6f1f93ffa13ba2b = L.circleMarker(
+                [39.873945,25.274616],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#8c7300',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_c332c1be29814d00a8181c49f58add37 = L.popup({maxWidth: '300'});
+
+            
+                var html_0e02854b1a5345aa8142af394dd5c178 = $('<div id="html_0e02854b1a5345aa8142af394dd5c178" style="width: 100.0%; height: 100.0%;">MeteoMoudros:30.54</div>')[0];
+                popup_c332c1be29814d00a8181c49f58add37.setContent(html_0e02854b1a5345aa8142af394dd5c178);
+            
+
+            circle_marker_3e632578accb4bbca6f1f93ffa13ba2b.bindPopup(popup_c332c1be29814d00a8181c49f58add37);
+
+            
+        
+    
+
+            var circle_marker_76632fdd0965418692961d83b5ced3a0 = L.circleMarker(
+                [39.372212,-104.85609],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#996600',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_0c3644b6fc3c447c8048be4088d4311a = L.popup({maxWidth: '300'});
+
+            
+                var html_a0a13329d0b7435b8b61764b13f7a867 = $('<div id="html_a0a13329d0b7435b8b61764b13f7a867" style="width: 100.0%; height: 100.0%;">CRMSWeatherStation:28.86</div>')[0];
+                popup_0c3644b6fc3c447c8048be4088d4311a.setContent(html_a0a13329d0b7435b8b61764b13f7a867);
+            
+
+            circle_marker_76632fdd0965418692961d83b5ced3a0.bindPopup(popup_0c3644b6fc3c447c8048be4088d4311a);
+
+            
+        
+    
+
+            var circle_marker_3d6548c5b6c7461781f422e63c35f393 = L.circleMarker(
+                [51.14931,0.87808],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#b94600',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_3e7d18256e6e471496d77fa10d0ad904 = L.popup({maxWidth: '300'});
+
+            
+                var html_cc6aed9488f446aeb4debf2fec08e0c0 = $('<div id="html_cc6aed9488f446aeb4debf2fec08e0c0" style="width: 100.0%; height: 100.0%;">Ashford:24.76</div>')[0];
+                popup_3e7d18256e6e471496d77fa10d0ad904.setContent(html_cc6aed9488f446aeb4debf2fec08e0c0);
+            
+
+            circle_marker_3d6548c5b6c7461781f422e63c35f393.bindPopup(popup_3e7d18256e6e471496d77fa10d0ad904);
+
+            
+        
+    
+
+            var circle_marker_380bba75c3e1473094c92f4a98891080 = L.circleMarker(
+                [52.197834,0.125366],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#9a6500',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_3bd13f28590f437d80aa9b4e62e942a8 = L.popup({maxWidth: '300'});
+
+            
+                var html_bda5abc60d90457697ff1b7c1bd25ad7 = $('<div id="html_bda5abc60d90457697ff1b7c1bd25ad7" style="width: 100.0%; height: 100.0%;">ACRG_ROOF:28.68</div>')[0];
+                popup_3bd13f28590f437d80aa9b4e62e942a8.setContent(html_bda5abc60d90457697ff1b7c1bd25ad7);
+            
+
+            circle_marker_380bba75c3e1473094c92f4a98891080.bindPopup(popup_3bd13f28590f437d80aa9b4e62e942a8);
+
+            
+        
+    
+
+            var circle_marker_6ab331a781f54c7bb9a143cdb9c4b3cb = L.circleMarker(
+                [37.568611,-84.296389],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#996600',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_ec4305034cac4837b5a72d7ed0fa8a27 = L.popup({maxWidth: '300'});
+
+            
+                var html_8f1c35e7f1e044dd8c3938ac13769586 = $('<div id="html_8f1c35e7f1e044dd8c3938ac13769586" style="width: 100.0%; height: 100.0%;">BCWeather:28.9</div>')[0];
+                popup_ec4305034cac4837b5a72d7ed0fa8a27.setContent(html_8f1c35e7f1e044dd8c3938ac13769586);
+            
+
+            circle_marker_6ab331a781f54c7bb9a143cdb9c4b3cb.bindPopup(popup_ec4305034cac4837b5a72d7ed0fa8a27);
+
+            
+        
+    
+
+            var circle_marker_16ecd3999ba142fc9d4de33170d5d65a = L.circleMarker(
+                [54.125221,-2.761019],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#b84700',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_9739f36923224fbcb7a215b70f1432cf = L.popup({maxWidth: '300'});
+
+            
+                var html_78f7ce0d08494a2d8aeaadeeceafe87d = $('<div id="html_78f7ce0d08494a2d8aeaadeeceafe87d" style="width: 100.0%; height: 100.0%;">Main:24.99</div>')[0];
+                popup_9739f36923224fbcb7a215b70f1432cf.setContent(html_78f7ce0d08494a2d8aeaadeeceafe87d);
+            
+
+            circle_marker_16ecd3999ba142fc9d4de33170d5d65a.bindPopup(popup_9739f36923224fbcb7a215b70f1432cf);
+
+            
+        
+    
+
+            var circle_marker_cf0d2d8b3f8f42479fa74a328fc94ab4 = L.circleMarker(
+                [-35.140833,138.492331],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#af5000',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_015b33e2ddc4459393e2ca26d346a871 = L.popup({maxWidth: '300'});
+
+            
+                var html_f7540a6bf76d4183a1ae6cde47adb391 = $('<div id="html_f7540a6bf76d4183a1ae6cde47adb391" style="width: 100.0%; height: 100.0%;">Cardijn:26.08</div>')[0];
+                popup_015b33e2ddc4459393e2ca26d346a871.setContent(html_f7540a6bf76d4183a1ae6cde47adb391);
+            
+
+            circle_marker_cf0d2d8b3f8f42479fa74a328fc94ab4.bindPopup(popup_015b33e2ddc4459393e2ca26d346a871);
+
+            
+        
+    
+
+            var circle_marker_2e76b705f7cf4fe1a55e3a37ae05f733 = L.circleMarker(
+                [40.238936,23.290841],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#cf3000',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_ec3c212fc3dc438bbcd25641552565f7 = L.popup({maxWidth: '300'});
+
+            
+                var html_2ac111f6a76e4fd68291337534383d7d = $('<div id="html_2ac111f6a76e4fd68291337534383d7d" style="width: 100.0%; height: 100.0%;">GENERAL LYCEUM OF NEA MOUDANIA:22.04</div>')[0];
+                popup_ec3c212fc3dc438bbcd25641552565f7.setContent(html_2ac111f6a76e4fd68291337534383d7d);
+            
+
+            circle_marker_2e76b705f7cf4fe1a55e3a37ae05f733.bindPopup(popup_ec3c212fc3dc438bbcd25641552565f7);
+
+            
+        
+    
+
+            var circle_marker_dbb9835fd3c64484acf7282cf9c0753d = L.circleMarker(
+                [39.563132,21.776344],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#cf3000',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_06d8f5b2d76e4d588db654c597721fd2 = L.popup({maxWidth: '300'});
+
+            
+                var html_26f3e2b246a64e95ba8761414cf06588 = $('<div id="html_26f3e2b246a64e95ba8761414cf06588" style="width: 100.0%; height: 100.0%;">1ekTrikalon:22.09</div>')[0];
+                popup_06d8f5b2d76e4d588db654c597721fd2.setContent(html_26f3e2b246a64e95ba8761414cf06588);
+            
+
+            circle_marker_dbb9835fd3c64484acf7282cf9c0753d.bindPopup(popup_06d8f5b2d76e4d588db654c597721fd2);
+
+            
+        
+    
+
+            var circle_marker_511f1fd33bc34d7e9c48b1cd486bcee4 = L.circleMarker(
+                [46.815696,-71.316568],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#df2000',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_0f2923efef61475288b8b209d3fe6e7b = L.popup({maxWidth: '300'});
+
+            
+                var html_69936f0b5acd4f139e71a82f26023a02 = $('<div id="html_69936f0b5acd4f139e71a82f26023a02" style="width: 100.0%; height: 100.0%;">Station météo La Camaradière:20</div>')[0];
+                popup_0f2923efef61475288b8b209d3fe6e7b.setContent(html_69936f0b5acd4f139e71a82f26023a02);
+            
+
+            circle_marker_511f1fd33bc34d7e9c48b1cd486bcee4.bindPopup(popup_0f2923efef61475288b8b209d3fe6e7b);
+
+            
+        
+    
+
+            var circle_marker_37f7e977ce26405c9de1f6d4d2133813 = L.circleMarker(
+                [52.190844,0.163486],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#dd2200',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_fc5d530eaf2e4763b735486bdf8484f2 = L.popup({maxWidth: '300'});
+
+            
+                var html_5e991aeec46a4d6d80de17ffcb106351 = $('<div id="html_5e991aeec46a4d6d80de17ffcb106351" style="width: 100.0%; height: 100.0%;">CB1_3TD:20.27</div>')[0];
+                popup_fc5d530eaf2e4763b735486bdf8484f2.setContent(html_5e991aeec46a4d6d80de17ffcb106351);
+            
+
+            circle_marker_37f7e977ce26405c9de1f6d4d2133813.bindPopup(popup_fc5d530eaf2e4763b735486bdf8484f2);
+
+            
+        
+    
+
+            var circle_marker_7b0b34b838214d0f85d3e20d0d081b33 = L.circleMarker(
+                [-20.672725,-46.262987],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#d82700',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_b2488d3c832c44c1b260ed3c8d51e94c = L.popup({maxWidth: '300'});
+
+            
+                var html_06efa9421301439aa64491b6db5bc5f4 = $('<div id="html_06efa9421301439aa64491b6db5bc5f4" style="width: 100.0%; height: 100.0%;">rancho:20.92</div>')[0];
+                popup_b2488d3c832c44c1b260ed3c8d51e94c.setContent(html_06efa9421301439aa64491b6db5bc5f4);
+            
+
+            circle_marker_7b0b34b838214d0f85d3e20d0d081b33.bindPopup(popup_b2488d3c832c44c1b260ed3c8d51e94c);
+
+            
+        
+    
+
+            var circle_marker_328d041f68d641a39e23d1237cad6ac8 = L.circleMarker(
+                [39.566543,21.771845],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#cd3200',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_1b44a9f7c2db4b2da69fbd1688e8f593 = L.popup({maxWidth: '300'});
+
+            
+                var html_fd4758e2e5db4e9e86adf1ca8badc6fd = $('<div id="html_fd4758e2e5db4e9e86adf1ca8badc6fd" style="width: 100.0%; height: 100.0%;">7thHSWeatherStation:22.26</div>')[0];
+                popup_1b44a9f7c2db4b2da69fbd1688e8f593.setContent(html_fd4758e2e5db4e9e86adf1ca8badc6fd);
+            
+
+            circle_marker_328d041f68d641a39e23d1237cad6ac8.bindPopup(popup_1b44a9f7c2db4b2da69fbd1688e8f593);
+
+            
+        
+    
+
+            var circle_marker_0eee5ca006fb4c509309d2c08217fecf = L.circleMarker(
+                [38.280918,21.790813],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#7c8300',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_3072ebd8178d4a35bdc6eadbfdfb9372 = L.popup({maxWidth: '300'});
+
+            
+                var html_ff91517c01184bb18c79d9ea46e8fe2c = $('<div id="html_ff91517c01184bb18c79d9ea46e8fe2c" style="width: 100.0%; height: 100.0%;">pgppRPWS:32.49</div>')[0];
+                popup_3072ebd8178d4a35bdc6eadbfdfb9372.setContent(html_ff91517c01184bb18c79d9ea46e8fe2c);
+            
+
+            circle_marker_0eee5ca006fb4c509309d2c08217fecf.bindPopup(popup_3072ebd8178d4a35bdc6eadbfdfb9372);
+
+            
+        
+    
+
+            var circle_marker_23346bfe0dc84a1d9e9bfe7af82e8b8c = L.circleMarker(
+                [48.9897,2.819181],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#807f00',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_b0bb0254adaa4f45a6d77dc148634c01 = L.popup({maxWidth: '300'});
+
+            
+                var html_1dce83bdd8ba41e1ab39ca29cfd1834a = $('<div id="html_1dce83bdd8ba41e1ab39ca29cfd1834a" style="width: 100.0%; height: 100.0%;">test school weather station:31.99</div>')[0];
+                popup_b0bb0254adaa4f45a6d77dc148634c01.setContent(html_1dce83bdd8ba41e1ab39ca29cfd1834a);
+            
+
+            circle_marker_23346bfe0dc84a1d9e9bfe7af82e8b8c.bindPopup(popup_b0bb0254adaa4f45a6d77dc148634c01);
+
+            
+        
+    
+
+            var circle_marker_adbc00a327854fbb909a62698a021c4e = L.circleMarker(
+                [58.45468,-78.10139],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#0000ff',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_1ac8066c6a7f4f3fb2dc63e6e5a60353 = L.popup({maxWidth: '300'});
+
+            
+                var html_ceb85b11489f45109b23191aad518c90 = $('<div id="html_ceb85b11489f45109b23191aad518c90" style="width: 100.0%; height: 100.0%;">ColdWeatherOrNot:-16.29</div>')[0];
+                popup_1ac8066c6a7f4f3fb2dc63e6e5a60353.setContent(html_ceb85b11489f45109b23191aad518c90);
+            
+
+            circle_marker_adbc00a327854fbb909a62698a021c4e.bindPopup(popup_1ac8066c6a7f4f3fb2dc63e6e5a60353);
+
+            
+        
+    
+
+            var circle_marker_c810a54fcfd344ffbe3835cae15a0362 = L.circleMarker(
+                [-26.10088,28.19728],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#df2000',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_4ba8f405ca4e4abd85a037dd32bcbcd8 = L.popup({maxWidth: '300'});
+
+            
+                var html_74cb22a3ab6642abbb48442d9290e2fa = $('<div id="html_74cb22a3ab6642abbb48442d9290e2fa" style="width: 100.0%; height: 100.0%;">ZS6SSG_WS:19.99</div>')[0];
+                popup_4ba8f405ca4e4abd85a037dd32bcbcd8.setContent(html_74cb22a3ab6642abbb48442d9290e2fa);
+            
+
+            circle_marker_c810a54fcfd344ffbe3835cae15a0362.bindPopup(popup_4ba8f405ca4e4abd85a037dd32bcbcd8);
+
+            
+        
+    
+
+            var circle_marker_7681f34cba9244eca92bd0b51208036c = L.circleMarker(
+                [53.906402,-1.749303],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#df2000',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_076409da126a44ed9b0b0d6229b0b720 = L.popup({maxWidth: '300'});
+
+            
+                var html_cd66571d79c64c7086acbfc206a0b341 = $('<div id="html_cd66571d79c64c7086acbfc206a0b341" style="width: 100.0%; height: 100.0%;">bweather:20</div>')[0];
+                popup_076409da126a44ed9b0b0d6229b0b720.setContent(html_cd66571d79c64c7086acbfc206a0b341);
+            
+
+            circle_marker_7681f34cba9244eca92bd0b51208036c.bindPopup(popup_076409da126a44ed9b0b0d6229b0b720);
+
+            
+        
+    
+
+            var circle_marker_6f07ea049fed460a95887aa0ea3e5ffd = L.circleMarker(
+                [40.377537,-80.045021],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#c23d00',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_15089e2e37a84371a4b21786e86b19d4 = L.popup({maxWidth: '300'});
+
+            
+                var html_5b4024932a9d41369c77fef3a645ddbe = $('<div id="html_5b4024932a9d41369c77fef3a645ddbe" style="width: 100.0%; height: 100.0%;">IBTeam:23.68</div>')[0];
+                popup_15089e2e37a84371a4b21786e86b19d4.setContent(html_5b4024932a9d41369c77fef3a645ddbe);
+            
+
+            circle_marker_6f07ea049fed460a95887aa0ea3e5ffd.bindPopup(popup_15089e2e37a84371a4b21786e86b19d4);
+
+            
+        
+    
+
+            var circle_marker_db48fa0d19434cdfb9b92a6739cff288 = L.circleMarker(
+                [-0.152797,52.782151],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#a95600',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_16146dd3f54b4751b9155f09d65f0977 = L.popup({maxWidth: '300'});
+
+            
+                var html_b41a6d6bbcb54210a9790084279ca528 = $('<div id="html_b41a6d6bbcb54210a9790084279ca528" style="width: 100.0%; height: 100.0%;">AHS-1:26.89</div>')[0];
+                popup_16146dd3f54b4751b9155f09d65f0977.setContent(html_b41a6d6bbcb54210a9790084279ca528);
+            
+
+            circle_marker_db48fa0d19434cdfb9b92a6739cff288.bindPopup(popup_16146dd3f54b4751b9155f09d65f0977);
+
+            
+        
+    
+
+            var circle_marker_5e585e60ee28438b920c5e11d990c4de = L.circleMarker(
+                [40.597778,22.969889],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#8c7300',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_8d037aed304a465dbb54ec14d649e95c = L.popup({maxWidth: '300'});
+
+            
+                var html_08386bc06a4340629395b2e8401b9ffe = $('<div id="html_08386bc06a4340629395b2e8401b9ffe" style="width: 100.0%; height: 100.0%;">32GEL_WEATHER_STATION:30.47</div>')[0];
+                popup_8d037aed304a465dbb54ec14d649e95c.setContent(html_08386bc06a4340629395b2e8401b9ffe);
+            
+
+            circle_marker_5e585e60ee28438b920c5e11d990c4de.bindPopup(popup_8d037aed304a465dbb54ec14d649e95c);
+
+            
+        
+    
+
+            var circle_marker_9d9175cf08db4e488e262f510fbd5cb3 = L.circleMarker(
+                [47.41094,9.729244],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#6e9100',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_67a4e2e7351643d0844a7588cce8a2f4 = L.popup({maxWidth: '300'});
+
+            
+                var html_633560b5b7a1472b95bec53b0bad7ce8 = $('<div id="html_633560b5b7a1472b95bec53b0bad7ce8" style="width: 100.0%; height: 100.0%;">BRG/BORG Schoren Dornbirn:34.25</div>')[0];
+                popup_67a4e2e7351643d0844a7588cce8a2f4.setContent(html_633560b5b7a1472b95bec53b0bad7ce8);
+            
+
+            circle_marker_9d9175cf08db4e488e262f510fbd5cb3.bindPopup(popup_67a4e2e7351643d0844a7588cce8a2f4);
+
+            
+        
+    
+
+            var circle_marker_dc75f229549c4c929a82415e34a391d4 = L.circleMarker(
+                [35.0853,106.6056],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#aa5500',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_bb2b8651e89a4ce6a23ed26b98d93ec8 = L.popup({maxWidth: '300'});
+
+            
+                var html_21913372408446cb909079ea96dce49c = $('<div id="html_21913372408446cb909079ea96dce49c" style="width: 100.0%; height: 100.0%;">Test Central New Mexico College Weather Station:26.7</div>')[0];
+                popup_bb2b8651e89a4ce6a23ed26b98d93ec8.setContent(html_21913372408446cb909079ea96dce49c);
+            
+
+            circle_marker_dc75f229549c4c929a82415e34a391d4.bindPopup(popup_bb2b8651e89a4ce6a23ed26b98d93ec8);
+
+            
+        
+    
+
+            var circle_marker_82e8a323c89148698029478a17f35ab6 = L.circleMarker(
+                [52.19513,0.131768],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#a35c00',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_9dd4aa8c3a454bf78ac9eafc60f4fe35 = L.popup({maxWidth: '300'});
+
+            
+                var html_5771c8fa52dd4fef86220b227f2f1422 = $('<div id="html_5771c8fa52dd4fef86220b227f2f1422" style="width: 100.0%; height: 100.0%;">Pi Towers:27.64</div>')[0];
+                popup_9dd4aa8c3a454bf78ac9eafc60f4fe35.setContent(html_5771c8fa52dd4fef86220b227f2f1422);
+            
+
+            circle_marker_82e8a323c89148698029478a17f35ab6.bindPopup(popup_9dd4aa8c3a454bf78ac9eafc60f4fe35);
+
+            
+        
+    
+
+            var circle_marker_94197f4bdea64bb6bf4c87f015f83508 = L.circleMarker(
+                [8.145496,5.162386],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#b04f00',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_2c60b4177aec42ab8b715bb52706d49f = L.popup({maxWidth: '300'});
+
+            
+                var html_d8e6b541c363401b995e3bff33ff6aa1 = $('<div id="html_d8e6b541c363401b995e3bff33ff6aa1" style="width: 100.0%; height: 100.0%;">TAICO Digital Weather:25.99</div>')[0];
+                popup_2c60b4177aec42ab8b715bb52706d49f.setContent(html_d8e6b541c363401b995e3bff33ff6aa1);
+            
+
+            circle_marker_94197f4bdea64bb6bf4c87f015f83508.bindPopup(popup_2c60b4177aec42ab8b715bb52706d49f);
+
+            
+        
+    
+
+            var circle_marker_111a57ef73b041e1ad8e6f82dac8201c = L.circleMarker(
+                [41.722222,-92.349629],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#df2000',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_082675e1b00f42c790d2640dfed3cf49 = L.popup({maxWidth: '300'});
+
+            
+                var html_242b3ec3144d44a1a2e1d4ba3d8b072a = $('<div id="html_242b3ec3144d44a1a2e1d4ba3d8b072a" style="width: 100.0%; height: 100.0%;">CHS_Main01:20</div>')[0];
+                popup_082675e1b00f42c790d2640dfed3cf49.setContent(html_242b3ec3144d44a1a2e1d4ba3d8b072a);
+            
+
+            circle_marker_111a57ef73b041e1ad8e6f82dac8201c.bindPopup(popup_082675e1b00f42c790d2640dfed3cf49);
+
+            
+        
+    
+
+            var circle_marker_38f202d8228a432dbd10a21d3387e3e4 = L.circleMarker(
+                [46.622472,5.211796],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#cf3000',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_f61b5939f4b04f2cbfa9975db71d516b = L.popup({maxWidth: '300'});
+
+            
+                var html_2b5f1037697b4dc1b4c9dbb1409ceff3 = $('<div id="html_2b5f1037697b4dc1b4c9dbb1409ceff3" style="width: 100.0%; height: 100.0%;">MeteoPi71:22.02</div>')[0];
+                popup_f61b5939f4b04f2cbfa9975db71d516b.setContent(html_2b5f1037697b4dc1b4c9dbb1409ceff3);
+            
+
+            circle_marker_38f202d8228a432dbd10a21d3387e3e4.bindPopup(popup_f61b5939f4b04f2cbfa9975db71d516b);
+
+            
+        
+    
+
+            var circle_marker_6a1a0512937e470a9dd6ac371fba3306 = L.circleMarker(
+                [51.547657,-0.109745],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#c4003b',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_bb44bb0bb1ab4429a8e55fafc13a75af = L.popup({maxWidth: '300'});
+
+            
+                var html_9cb6fee8cb6c4b99ab5bd822e32ac591 = $('<div id="html_9cb6fee8cb6c4b99ab5bd822e32ac591" style="width: 100.0%; height: 100.0%;">St Mary Magdalene Academy:8.36</div>')[0];
+                popup_bb44bb0bb1ab4429a8e55fafc13a75af.setContent(html_9cb6fee8cb6c4b99ab5bd822e32ac591);
+            
+
+            circle_marker_6a1a0512937e470a9dd6ac371fba3306.bindPopup(popup_bb44bb0bb1ab4429a8e55fafc13a75af);
+
+            
+        
+    
+
+            var circle_marker_ba39cc71230d441881eafb80fc692d38 = L.circleMarker(
+                [14.079444,100.61196],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#a15e00',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_03c1549c0adb433f856743fbc68e06af = L.popup({maxWidth: '300'});
+
+            
+                var html_fed7f27644bb43aa9046b41a4dd812e1 = $('<div id="html_fed7f27644bb43aa9046b41a4dd812e1" style="width: 100.0%; height: 100.0%;">RSWeatherLab:27.87</div>')[0];
+                popup_03c1549c0adb433f856743fbc68e06af.setContent(html_fed7f27644bb43aa9046b41a4dd812e1);
+            
+
+            circle_marker_ba39cc71230d441881eafb80fc692d38.bindPopup(popup_03c1549c0adb433f856743fbc68e06af);
+
+            
+        
+    
+
+            var circle_marker_32fd48ce18674e1cb3fb9bf8ae102e38 = L.circleMarker(
+                [56.122828,12.301261],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#a95600',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_db5ccf21645949f88f4fe78c1ca48caa = L.popup({maxWidth: '300'});
+
+            
+                var html_49b68aa0ec2343c392e6b654a0467727 = $('<div id="html_49b68aa0ec2343c392e6b654a0467727" style="width: 100.0%; height: 100.0%;">Gilbjergskolen:26.86</div>')[0];
+                popup_db5ccf21645949f88f4fe78c1ca48caa.setContent(html_49b68aa0ec2343c392e6b654a0467727);
+            
+
+            circle_marker_32fd48ce18674e1cb3fb9bf8ae102e38.bindPopup(popup_db5ccf21645949f88f4fe78c1ca48caa);
+
+            
+        
+    
+
+            var circle_marker_34fb8415061042968f48117a3fa4038a = L.circleMarker(
+                [37.727497,-121.869422],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#748b00',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_2a995aca58e14a79935556d582210f8e = L.popup({maxWidth: '300'});
+
+            
+                var html_7b71eeaafae5489bbe9acd42c9513faa = $('<div id="html_7b71eeaafae5489bbe9acd42c9513faa" style="width: 100.0%; height: 100.0%;">QLS Aramona Weather Station:33.48</div>')[0];
+                popup_2a995aca58e14a79935556d582210f8e.setContent(html_7b71eeaafae5489bbe9acd42c9513faa);
+            
+
+            circle_marker_34fb8415061042968f48117a3fa4038a.bindPopup(popup_2a995aca58e14a79935556d582210f8e);
+
+            
+        
+    
+
+            var circle_marker_6df70dc3951e471bb685f26f0da053fa = L.circleMarker(
+                [46.198645,6.172578],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#f10e00',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_2d8f584be9974b4e818d2003864198ad = L.popup({maxWidth: '300'});
+
+            
+                var html_a896276d7ed84169bd724011964ef232 = $('<div id="html_a896276d7ed84169bd724011964ef232" style="width: 100.0%; height: 100.0%;">lgbmsweather:17.78</div>')[0];
+                popup_2d8f584be9974b4e818d2003864198ad.setContent(html_a896276d7ed84169bd724011964ef232);
+            
+
+            circle_marker_6df70dc3951e471bb685f26f0da053fa.bindPopup(popup_2d8f584be9974b4e818d2003864198ad);
+
+            
+        
+    
+
+            var circle_marker_9b49b4d098ff4a6789cb2c752268639e = L.circleMarker(
+                [52.375235,20.927556],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#c80037',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_ee3a7676c1d041e0b6fd8d121dd60507 = L.popup({maxWidth: '300'});
+
+            
+                var html_805c0dafb280479694f75f3fb022e8e2 = $('<div id="html_805c0dafb280479694f75f3fb022e8e2" style="width: 100.0%; height: 100.0%;">Jablonna Szkolna 2:8.91</div>')[0];
+                popup_ee3a7676c1d041e0b6fd8d121dd60507.setContent(html_805c0dafb280479694f75f3fb022e8e2);
+            
+
+            circle_marker_9b49b4d098ff4a6789cb2c752268639e.bindPopup(popup_ee3a7676c1d041e0b6fd8d121dd60507);
+
+            
+        
+    
+
+            var circle_marker_9dcd5d911e6c4ec4ab02ee3348de8ca9 = L.circleMarker(
+                [35.771804,-78.66629],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#a65900',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_9e96af102245401491ecd5778a782a56 = L.popup({maxWidth: '300'});
+
+            
+                var html_87288e8224f24e2fbc9cbfac25e83015 = $('<div id="html_87288e8224f24e2fbc9cbfac25e83015" style="width: 100.0%; height: 100.0%;">Wake STEM ECHS Weather Station:27.18</div>')[0];
+                popup_9e96af102245401491ecd5778a782a56.setContent(html_87288e8224f24e2fbc9cbfac25e83015);
+            
+
+            circle_marker_9dcd5d911e6c4ec4ab02ee3348de8ca9.bindPopup(popup_9e96af102245401491ecd5778a782a56);
+
+            
+        
+    
+
+            var circle_marker_9de0003f14564322aa7ccfdec3c92ae5 = L.circleMarker(
+                [52.412773,20.931398],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#c93600',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_03afc0798ac94c00a11497479ba78651 = L.popup({maxWidth: '300'});
+
+            
+                var html_9d8ced7f847543ed9f6941d0ae46ae7a = $('<div id="html_9d8ced7f847543ed9f6941d0ae46ae7a" style="width: 100.0%; height: 100.0%;">Stacja_STO35:22.75</div>')[0];
+                popup_03afc0798ac94c00a11497479ba78651.setContent(html_9d8ced7f847543ed9f6941d0ae46ae7a);
+            
+
+            circle_marker_9de0003f14564322aa7ccfdec3c92ae5.bindPopup(popup_03afc0798ac94c00a11497479ba78651);
+
+            
+        
+    
+
+            var circle_marker_c9226c86c13b470bb39aec0fee6a5c21 = L.circleMarker(
+                [35.212923,26.109291],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#887700',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_69a083702b804a8d90abe216ade7ed56 = L.popup({maxWidth: '300'});
+
+            
+                var html_ce19648995154d6599df9a849772f0b0 = $('<div id="html_ce19648995154d6599df9a849772f0b0" style="width: 100.0%; height: 100.0%;">3rd_Primary_School_of_Sitia:30.99</div>')[0];
+                popup_69a083702b804a8d90abe216ade7ed56.setContent(html_ce19648995154d6599df9a849772f0b0);
+            
+
+            circle_marker_c9226c86c13b470bb39aec0fee6a5c21.bindPopup(popup_69a083702b804a8d90abe216ade7ed56);
+
+            
+        
+    
+
+            var circle_marker_285ac8c15cb64028af6a9b07addb352a = L.circleMarker(
+                [37.2152,93.2826],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#a85700',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_0374582d92674981b37196cd22acb6fe = L.popup({maxWidth: '300'});
+
+            
+                var html_231226d6edab49ae80661beec9efff9a = $('<div id="html_231226d6edab49ae80661beec9efff9a" style="width: 100.0%; height: 100.0%;">OTC-NET:26.98</div>')[0];
+                popup_0374582d92674981b37196cd22acb6fe.setContent(html_231226d6edab49ae80661beec9efff9a);
+            
+
+            circle_marker_285ac8c15cb64028af6a9b07addb352a.bindPopup(popup_0374582d92674981b37196cd22acb6fe);
+
+            
+        
+    
+
+            var circle_marker_f72c13f4f0614ad8ad48b61f5842d20c = L.circleMarker(
+                [40.292689,21.789313],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#b04f00',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_0603c097fbba41abab444a9a63298b37 = L.popup({maxWidth: '300'});
+
+            
+                var html_d9f710879e974310aa695e77b4acb31a = $('<div id="html_d9f710879e974310aa695e77b4acb31a" style="width: 100.0%; height: 100.0%;">Aeolus:25.93</div>')[0];
+                popup_0603c097fbba41abab444a9a63298b37.setContent(html_d9f710879e974310aa695e77b4acb31a);
+            
+
+            circle_marker_f72c13f4f0614ad8ad48b61f5842d20c.bindPopup(popup_0603c097fbba41abab444a9a63298b37);
+
+            
+        
+    
+
+            var circle_marker_11c9be8cb91144f4bef48b81f6c5f746 = L.circleMarker(
+                [53.380281,-2.118961],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#e60019',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_819a346215124c9c8b24ff7dfbcde0d3 = L.popup({maxWidth: '300'});
+
+            
+                var html_9986fa0d59964912ab5071b862e452af = $('<div id="html_9986fa0d59964912ab5071b862e452af" style="width: 100.0%; height: 100.0%;">Test Weather Station:12.72</div>')[0];
+                popup_819a346215124c9c8b24ff7dfbcde0d3.setContent(html_9986fa0d59964912ab5071b862e452af);
+            
+
+            circle_marker_11c9be8cb91144f4bef48b81f6c5f746.bindPopup(popup_819a346215124c9c8b24ff7dfbcde0d3);
+
+            
+        
+    
+
+            var circle_marker_abdab761f2e6406d8564ff50943627c5 = L.circleMarker(
+                [-21.220144,-47.81668],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#897600',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_82a9a02f81564083bdf9e412f4137149 = L.popup({maxWidth: '300'});
+
+            
+                var html_e814c05ff19e48939820de8c2a92f24a = $('<div id="html_e814c05ff19e48939820de8c2a92f24a" style="width: 100.0%; height: 100.0%;">Inventor:30.83</div>')[0];
+                popup_82a9a02f81564083bdf9e412f4137149.setContent(html_e814c05ff19e48939820de8c2a92f24a);
+            
+
+            circle_marker_abdab761f2e6406d8564ff50943627c5.bindPopup(popup_82a9a02f81564083bdf9e412f4137149);
+
+            
+        
+    
+
+            var circle_marker_c064a4cfddf0464a90dccad040a24efa = L.circleMarker(
+                [51.074739,-114.070677],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#7c8300',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_1dff515f476f41608fb0b530dea9d76d = L.popup({maxWidth: '300'});
+
+            
+                var html_5ad0102814144434b3613d5224b30edc = $('<div id="html_5ad0102814144434b3613d5224b30edc" style="width: 100.0%; height: 100.0%;">Ecole de la Rose sauvage, Calgary, Canada:32.52</div>')[0];
+                popup_1dff515f476f41608fb0b530dea9d76d.setContent(html_5ad0102814144434b3613d5224b30edc);
+            
+
+            circle_marker_c064a4cfddf0464a90dccad040a24efa.bindPopup(popup_1dff515f476f41608fb0b530dea9d76d);
+
+            
+        
+    
+
+            var circle_marker_43d9032d1f31433ca78c2528cf83d85d = L.circleMarker(
+                [22.315232,70.816118],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#956a00',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_879ce7cf348c460690f99446af319469 = L.popup({maxWidth: '300'});
+
+            
+                var html_91230b70d03e4c85882d49954674315a = $('<div id="html_91230b70d03e4c85882d49954674315a" style="width: 100.0%; height: 100.0%;">Test_Weather:29.31</div>')[0];
+                popup_879ce7cf348c460690f99446af319469.setContent(html_91230b70d03e4c85882d49954674315a);
+            
+
+            circle_marker_43d9032d1f31433ca78c2528cf83d85d.bindPopup(popup_879ce7cf348c460690f99446af319469);
+
+            
+        
+    
+
+            var circle_marker_092d6411e12046b9a9dbf7aaf6741439 = L.circleMarker(
+                [40.619473,17.616081],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#b14e00',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_88739edd067e485780e43ff177cd1188 = L.popup({maxWidth: '300'});
+
+            
+                var html_ab94001dbd404d97be9dd8c63df4b747 = $('<div id="html_ab94001dbd404d97be9dd8c63df4b747" style="width: 100.0%; height: 100.0%;">test01:25.81</div>')[0];
+                popup_88739edd067e485780e43ff177cd1188.setContent(html_ab94001dbd404d97be9dd8c63df4b747);
+            
+
+            circle_marker_092d6411e12046b9a9dbf7aaf6741439.bindPopup(popup_88739edd067e485780e43ff177cd1188);
+
+            
+        
+    
+
+            var circle_marker_01867a881f2348408628a18866b312ed = L.circleMarker(
+                [-28.95078,-49.468256],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#b94600',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_e1824a7b3a0f4d50842cc6f59f6de49a = L.popup({maxWidth: '300'});
+
+            
+                var html_d934552a9bcd4d6097ea932d42705412 = $('<div id="html_d934552a9bcd4d6097ea932d42705412" style="width: 100.0%; height: 100.0%;">UFSC:24.75</div>')[0];
+                popup_e1824a7b3a0f4d50842cc6f59f6de49a.setContent(html_d934552a9bcd4d6097ea932d42705412);
+            
+
+            circle_marker_01867a881f2348408628a18866b312ed.bindPopup(popup_e1824a7b3a0f4d50842cc6f59f6de49a);
+
+            
+        
+    
+
+            var circle_marker_1be7c0c0a4f045eea248f45a4e0744d7 = L.circleMarker(
+                [54.315,-130.3208],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#db2400',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_770c4c7add374ff384906ae2a801f304 = L.popup({maxWidth: '300'});
+
+            
+                var html_15e0614f9b4d486b9fb38dbebccc5261 = $('<div id="html_15e0614f9b4d486b9fb38dbebccc5261" style="width: 100.0%; height: 100.0%;">Prince Rupert Weather Station:20.49</div>')[0];
+                popup_770c4c7add374ff384906ae2a801f304.setContent(html_15e0614f9b4d486b9fb38dbebccc5261);
+            
+
+            circle_marker_1be7c0c0a4f045eea248f45a4e0744d7.bindPopup(popup_770c4c7add374ff384906ae2a801f304);
+
+            
+        
+    
+
+            var circle_marker_a7a783ca34dd4cb3b21c2578fe75c1e8 = L.circleMarker(
+                [60.882073,11.562468],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#a95600',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_e949135e8bdf4c4e9e0abddcae88d8d8 = L.popup({maxWidth: '300'});
+
+            
+                var html_3da6139f241d44b59b1ea4637247dd49 = $('<div id="html_3da6139f241d44b59b1ea4637247dd49" style="width: 100.0%; height: 100.0%;">EK-WeatherStation:26.78</div>')[0];
+                popup_e949135e8bdf4c4e9e0abddcae88d8d8.setContent(html_3da6139f241d44b59b1ea4637247dd49);
+            
+
+            circle_marker_a7a783ca34dd4cb3b21c2578fe75c1e8.bindPopup(popup_e949135e8bdf4c4e9e0abddcae88d8d8);
+
+            
+        
+    
+
+            var circle_marker_9f3aab9092c14185811e81da296ec91e = L.circleMarker(
+                [23.54132,41.090923],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#f70800',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_ba34944f48fb4427a9152489ce08c188 = L.popup({maxWidth: '300'});
+
+            
+                var html_502a168a9e6949b39ceef821cf599009 = $('<div id="html_502a168a9e6949b39ceef821cf599009" style="width: 100.0%; height: 100.0%;">eolos:16.94</div>')[0];
+                popup_ba34944f48fb4427a9152489ce08c188.setContent(html_502a168a9e6949b39ceef821cf599009);
+            
+
+            circle_marker_9f3aab9092c14185811e81da296ec91e.bindPopup(popup_ba34944f48fb4427a9152489ce08c188);
+
+            
+        
+    
+
+            var circle_marker_024715b341f74c2bbe86133febcc0d66 = L.circleMarker(
+                [-30.058211,-51.173452],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#00ff00',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_4898e7f5fe534581a416545f8b58284e = L.popup({maxWidth: '300'});
+
+            
+                var html_5e88952e459b431aa126970c1f57133f = $('<div id="html_5e88952e459b431aa126970c1f57133f" style="width: 100.0%; height: 100.0%;">LTIGWeatherStation:48.11</div>')[0];
+                popup_4898e7f5fe534581a416545f8b58284e.setContent(html_5e88952e459b431aa126970c1f57133f);
+            
+
+            circle_marker_024715b341f74c2bbe86133febcc0d66.bindPopup(popup_4898e7f5fe534581a416545f8b58284e);
+
+            
+        
+    
+
+            var circle_marker_8bff77a0817e43869c4c4c49c44bf0cf = L.circleMarker(
+                [31.406818,73.120028],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#6e9100',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_2099ea77f309432d990c27f55a77184a = L.popup({maxWidth: '300'});
+
+            
+                var html_355e1b08827946889ddc7d6752aa47b7 = $('<div id="html_355e1b08827946889ddc7d6752aa47b7" style="width: 100.0%; height: 100.0%;">Beacon House School System:34.27</div>')[0];
+                popup_2099ea77f309432d990c27f55a77184a.setContent(html_355e1b08827946889ddc7d6752aa47b7);
+            
+
+            circle_marker_8bff77a0817e43869c4c4c49c44bf0cf.bindPopup(popup_2099ea77f309432d990c27f55a77184a);
+
+            
+        
+    
+
+            var circle_marker_4964fb8f85e54e8a9e768d5b7049a261 = L.circleMarker(
+                [40.61234,22.966715],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#ad5200',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_4171c8c8bbe24b30836b6b26e9344bec = L.popup({maxWidth: '300'});
+
+            
+                var html_0efded20825b44a4a150270ae71d9954 = $('<div id="html_0efded20825b44a4a150270ae71d9954" style="width: 100.0%; height: 100.0%;">test20:26.36</div>')[0];
+                popup_4171c8c8bbe24b30836b6b26e9344bec.setContent(html_0efded20825b44a4a150270ae71d9954);
+            
+
+            circle_marker_4964fb8f85e54e8a9e768d5b7049a261.bindPopup(popup_4171c8c8bbe24b30836b6b26e9344bec);
+
+            
+        
+    
+
+            var circle_marker_ab5536a2ff104bb8831975a0c237eb02 = L.circleMarker(
+                [44.14392,4.76819],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#7a8500',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_b7c8f7c25d6d4d9db50140ca9eb582fc = L.popup({maxWidth: '300'});
+
+            
+                var html_90166a89b26545a298d31b0ceb4e15e6 = $('<div id="html_90166a89b26545a298d31b0ceb4e15e6" style="width: 100.0%; height: 100.0%;">MeteoMartignan:32.76</div>')[0];
+                popup_b7c8f7c25d6d4d9db50140ca9eb582fc.setContent(html_90166a89b26545a298d31b0ceb4e15e6);
+            
+
+            circle_marker_ab5536a2ff104bb8831975a0c237eb02.bindPopup(popup_b7c8f7c25d6d4d9db50140ca9eb582fc);
+
+            
+        
+    
+
+            var circle_marker_83b609a638b84600b9fc51915d7d16b5 = L.circleMarker(
+                [39.097639,26.547785],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#7e8100',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_9f5e2bec90e04984b9020685dabb16bd = L.popup({maxWidth: '300'});
+
+            
+                var html_90c59a6c84174c549dab20180f010413 = $('<div id="html_90c59a6c84174c549dab20180f010413" style="width: 100.0%; height: 100.0%;">Mytilene, Lesvos, Greece:32.31</div>')[0];
+                popup_9f5e2bec90e04984b9020685dabb16bd.setContent(html_90c59a6c84174c549dab20180f010413);
+            
+
+            circle_marker_83b609a638b84600b9fc51915d7d16b5.bindPopup(popup_9f5e2bec90e04984b9020685dabb16bd);
+
+            
+        
+    
+
+            var circle_marker_99171de84c3a46e38144d50d34f73c4c = L.circleMarker(
+                [37.258796,-8.290331],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#a25d00',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_6649ae6ce1f744b489f37a0af9103ccc = L.popup({maxWidth: '300'});
+
+            
+                var html_e3bfb08458e4491e8f3720e204380144 = $('<div id="html_e3bfb08458e4491e8f3720e204380144" style="width: 100.0%; height: 100.0%;">messines:27.72</div>')[0];
+                popup_6649ae6ce1f744b489f37a0af9103ccc.setContent(html_e3bfb08458e4491e8f3720e204380144);
+            
+
+            circle_marker_99171de84c3a46e38144d50d34f73c4c.bindPopup(popup_6649ae6ce1f744b489f37a0af9103ccc);
+
+            
+        
+    
+
+            var circle_marker_ab424d10c1ef4d8d85e87a9d180cfe1d = L.circleMarker(
+                [47.791667,12.953055],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#f4000b',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_bae14cd4983746bba64bfeecce6d36d9 = L.popup({maxWidth: '300'});
+
+            
+                var html_7afebaa363f84536a7d7a71a87ac5a50 = $('<div id="html_7afebaa363f84536a7d7a71a87ac5a50" style="width: 100.0%; height: 100.0%;">NMS Laakirchen:14.41</div>')[0];
+                popup_bae14cd4983746bba64bfeecce6d36d9.setContent(html_7afebaa363f84536a7d7a71a87ac5a50);
+            
+
+            circle_marker_ab424d10c1ef4d8d85e87a9d180cfe1d.bindPopup(popup_bae14cd4983746bba64bfeecce6d36d9);
+
+            
+        
+    
+
+            var circle_marker_722310f72ecb442ca6e89cae29902753 = L.circleMarker(
+                [51.436598,-1.088424],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#b14e00',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_7c8aec436361409cb0a360d5dff876e2 = L.popup({maxWidth: '300'});
+
+            
+                var html_101a4bf550594d8881bf986f78cf33ab = $('<div id="html_101a4bf550594d8881bf986f78cf33ab" style="width: 100.0%; height: 100.0%;">Weatherstation:25.86</div>')[0];
+                popup_7c8aec436361409cb0a360d5dff876e2.setContent(html_101a4bf550594d8881bf986f78cf33ab);
+            
+
+            circle_marker_722310f72ecb442ca6e89cae29902753.bindPopup(popup_7c8aec436361409cb0a360d5dff876e2);
+
+            
+        
+    
+
+            var circle_marker_15c60a69a8e54eb380472a83cc2c9709 = L.circleMarker(
+                [40.032064,-75.174831],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#d12e00',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_8dae03a5ed8949e7adfb84f0634639a3 = L.popup({maxWidth: '300'});
+
+            
+                var html_f67c1b22f4a940459802f250ae66d856 = $('<div id="html_f67c1b22f4a940459802f250ae66d856" style="width: 100.0%; height: 100.0%;">PSD Weather Station:21.84</div>')[0];
+                popup_8dae03a5ed8949e7adfb84f0634639a3.setContent(html_f67c1b22f4a940459802f250ae66d856);
+            
+
+            circle_marker_15c60a69a8e54eb380472a83cc2c9709.bindPopup(popup_8dae03a5ed8949e7adfb84f0634639a3);
+
+            
+        
+    
+
+            var circle_marker_746c5702cce64226b053e4808b13dadd = L.circleMarker(
+                [53.263444,6.007731],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#956a00',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_c45228543931416291a45739be5c694d = L.popup({maxWidth: '300'});
+
+            
+                var html_28aa7f563df243b28b0b27c912eff346 = $('<div id="html_28aa7f563df243b28b0b27c912eff346" style="width: 100.0%; height: 100.0%;">De Falom:29.42</div>')[0];
+                popup_c45228543931416291a45739be5c694d.setContent(html_28aa7f563df243b28b0b27c912eff346);
+            
+
+            circle_marker_746c5702cce64226b053e4808b13dadd.bindPopup(popup_c45228543931416291a45739be5c694d);
+
+            
+        
+    
+
+            var circle_marker_1ccd5e1756184effb03b64a884f2d14f = L.circleMarker(
+                [51.454043,-0.953976],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#ea1500',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_15dde6f411404f4585928d42dfc99828 = L.popup({maxWidth: '300'});
+
+            
+                var html_7ea380b839674ff384ce08260f554ccf = $('<div id="html_7ea380b839674ff384ce08260f554ccf" style="width: 100.0%; height: 100.0%;">Reading College:18.61</div>')[0];
+                popup_15dde6f411404f4585928d42dfc99828.setContent(html_7ea380b839674ff384ce08260f554ccf);
+            
+
+            circle_marker_1ccd5e1756184effb03b64a884f2d14f.bindPopup(popup_15dde6f411404f4585928d42dfc99828);
+
+            
+        
+    
+
+            var circle_marker_305031180af74933b8afd6edb956a53e = L.circleMarker(
+                [51.522803,0.007889],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#e70018',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_8801dbef786b43c1a6142d7156ed4c21 = L.popup({maxWidth: '300'});
+
+            
+                var html_1d8b18559a9b44c2819462e343d19249 = $('<div id="html_1d8b18559a9b44c2819462e343d19249" style="width: 100.0%; height: 100.0%;">Hammers1:12.83</div>')[0];
+                popup_8801dbef786b43c1a6142d7156ed4c21.setContent(html_1d8b18559a9b44c2819462e343d19249);
+            
+
+            circle_marker_305031180af74933b8afd6edb956a53e.bindPopup(popup_8801dbef786b43c1a6142d7156ed4c21);
+
+            
+        
+    
+
+            var circle_marker_4bb4daa133f64283b062958056123c24 = L.circleMarker(
+                [53.301557,-1.466409],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#5ea100',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_e9311ea6330545d4bf99c9a1f1de1ec3 = L.popup({maxWidth: '300'});
+
+            
+                var html_03c817417d8744b3a463ab1790c19b9d = $('<div id="html_03c817417d8744b3a463ab1790c19b9d" style="width: 100.0%; height: 100.0%;">DHFS Weather Station:36.27</div>')[0];
+                popup_e9311ea6330545d4bf99c9a1f1de1ec3.setContent(html_03c817417d8744b3a463ab1790c19b9d);
+            
+
+            circle_marker_4bb4daa133f64283b062958056123c24.bindPopup(popup_e9311ea6330545d4bf99c9a1f1de1ec3);
+
+            
+        
+    
+
+            var circle_marker_183884a5993a40b08168dd31f61e554e = L.circleMarker(
+                [40.631823,22.74351],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#d52a00',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_e2fd1b6c6f714eda8cb4145922afef88 = L.popup({maxWidth: '300'});
+
+            
+                var html_e34974ea76694116ae60ace31bbee967 = $('<div id="html_e34974ea76694116ae60ace31bbee967" style="width: 100.0%; height: 100.0%;">Weather Station Lyceum of Chalastra - Greece:21.27</div>')[0];
+                popup_e2fd1b6c6f714eda8cb4145922afef88.setContent(html_e34974ea76694116ae60ace31bbee967);
+            
+
+            circle_marker_183884a5993a40b08168dd31f61e554e.bindPopup(popup_e2fd1b6c6f714eda8cb4145922afef88);
+
+            
+        
+    
+
+            var circle_marker_dc8678db7c5d41e59d6ee4d1fd050a55 = L.circleMarker(
+                [51.576,6.985],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#cf3000',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_2b85782da73b443e9a421f10d64af299 = L.popup({maxWidth: '300'});
+
+            
+                var html_fa360b6c9bc64f309773bf191a579ab6 = $('<div id="html_fa360b6c9bc64f309773bf191a579ab6" style="width: 100.0%; height: 100.0%;">RatsGladbeck:22.09</div>')[0];
+                popup_2b85782da73b443e9a421f10d64af299.setContent(html_fa360b6c9bc64f309773bf191a579ab6);
+            
+
+            circle_marker_dc8678db7c5d41e59d6ee4d1fd050a55.bindPopup(popup_2b85782da73b443e9a421f10d64af299);
+
+            
+        
+    
+
+            var circle_marker_bbc9bf5da76049eb8b3d3d4f71f36f0f = L.circleMarker(
+                [42.76871,11.10955],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#f90600',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_882336d2fa3846ffa1f9afba819b3ec4 = L.popup({maxWidth: '300'});
+
+            
+                var html_11b00804f6a345ab8b1a7c68c4ae4c84 = $('<div id="html_11b00804f6a345ab8b1a7c68c4ae4c84" style="width: 100.0%; height: 100.0%;">leopoldo:16.79</div>')[0];
+                popup_882336d2fa3846ffa1f9afba819b3ec4.setContent(html_11b00804f6a345ab8b1a7c68c4ae4c84);
+            
+
+            circle_marker_bbc9bf5da76049eb8b3d3d4f71f36f0f.bindPopup(popup_882336d2fa3846ffa1f9afba819b3ec4);
+
+            
+        
+    
+
+            var circle_marker_f23daf50141e42cca1496d30224fdf2f = L.circleMarker(
+                [50.813535,19.108224],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#b64900',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_393b8832000d42318628cfdf02aa89f8 = L.popup({maxWidth: '300'});
+
+            
+                var html_86084e9909bd4a03add3260f890d1df8 = $('<div id="html_86084e9909bd4a03add3260f890d1df8" style="width: 100.0%; height: 100.0%;">IVLO_PL:25.15</div>')[0];
+                popup_393b8832000d42318628cfdf02aa89f8.setContent(html_86084e9909bd4a03add3260f890d1df8);
+            
+
+            circle_marker_f23daf50141e42cca1496d30224fdf2f.bindPopup(popup_393b8832000d42318628cfdf02aa89f8);
+
+            
+        
+    
+
+            var circle_marker_602b99c484224003b165dc7324277577 = L.circleMarker(
+                [40.29728,-76.873569],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#c63900',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_afa7795060834126acc85323c455d314 = L.popup({maxWidth: '300'});
+
+            
+                var html_85bbc9f156d74e09882d2ceb8c966665 = $('<div id="html_85bbc9f156d74e09882d2ceb8c966665" style="width: 100.0%; height: 100.0%;">Weather@Londonderry:23.2</div>')[0];
+                popup_afa7795060834126acc85323c455d314.setContent(html_85bbc9f156d74e09882d2ceb8c966665);
+            
+
+            circle_marker_602b99c484224003b165dc7324277577.bindPopup(popup_afa7795060834126acc85323c455d314);
+
+            
+        
+    
+
+            var circle_marker_1fd4d61046ae4108934c66dd9b966699 = L.circleMarker(
+                [51.083455,17.015699],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#b14e00',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_2dad0f1e3c804b48a92860c1e6763897 = L.popup({maxWidth: '300'});
+
+            
+                var html_8f678a3442b54f69af10ece5afbb5ca1 = $('<div id="html_8f678a3442b54f69af10ece5afbb5ca1" style="width: 100.0%; height: 100.0%;">BISCpi:25.83</div>')[0];
+                popup_2dad0f1e3c804b48a92860c1e6763897.setContent(html_8f678a3442b54f69af10ece5afbb5ca1);
+            
+
+            circle_marker_1fd4d61046ae4108934c66dd9b966699.bindPopup(popup_2dad0f1e3c804b48a92860c1e6763897);
+
+            
+        
+    
+
+            var circle_marker_ff7737cda0ae4f90b38fa427d8e1bc77 = L.circleMarker(
+                [37.926748,-97.317943],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#807f00',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_64009f3437ec422ba2613fa853086d08 = L.popup({maxWidth: '300'});
+
+            
+                var html_bbdae312aee446648c89042bb79237fd = $('<div id="html_bbdae312aee446648c89042bb79237fd" style="width: 100.0%; height: 100.0%;">One:32.07</div>')[0];
+                popup_64009f3437ec422ba2613fa853086d08.setContent(html_bbdae312aee446648c89042bb79237fd);
+            
+
+            circle_marker_ff7737cda0ae4f90b38fa427d8e1bc77.bindPopup(popup_64009f3437ec422ba2613fa853086d08);
+
+            
+        
+    
+
+            var circle_marker_60a1a8ec885844a7b00d3b6643f55dac = L.circleMarker(
+                [50.724344,15.179845],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#d72800',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_039a9ec6cfb34c2eb87e2029bb46dcb9 = L.popup({maxWidth: '300'});
+
+            
+                var html_40681c6548224248801d964a6ccf6195 = $('<div id="html_40681c6548224248801d964a6ccf6195" style="width: 100.0%; height: 100.0%;">vikyr:21.07</div>')[0];
+                popup_039a9ec6cfb34c2eb87e2029bb46dcb9.setContent(html_40681c6548224248801d964a6ccf6195);
+            
+
+            circle_marker_60a1a8ec885844a7b00d3b6643f55dac.bindPopup(popup_039a9ec6cfb34c2eb87e2029bb46dcb9);
+
+            
+        
+    
+
+            var circle_marker_e23c6750295a443bb524e2f63b5e445b = L.circleMarker(
+                [57.46,49.03],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#fe0001',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_718939d241f34a8f9445bf0c7e6f7f53 = L.popup({maxWidth: '300'});
+
+            
+                var html_cb08ea4d8e064027b9ca698cacaaa4ef = $('<div id="html_cb08ea4d8e064027b9ca698cacaaa4ef" style="width: 100.0%; height: 100.0%;">Weather1:15.66</div>')[0];
+                popup_718939d241f34a8f9445bf0c7e6f7f53.setContent(html_cb08ea4d8e064027b9ca698cacaaa4ef);
+            
+
+            circle_marker_e23c6750295a443bb524e2f63b5e445b.bindPopup(popup_718939d241f34a8f9445bf0c7e6f7f53);
+
+            
+        
+    
+
+            var circle_marker_dc92d8d081f64108898e74191ed14366 = L.circleMarker(
+                [54.01975,23.9643],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#ad0052',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_90c81f54e4574df3b9ba343346e27fd1 = L.popup({maxWidth: '300'});
+
+            
+                var html_9d3169a478f244da991d4121c6ada054 = $('<div id="html_9d3169a478f244da991d4121c6ada054" style="width: 100.0%; height: 100.0%;">Druskininkai:5.43</div>')[0];
+                popup_90c81f54e4574df3b9ba343346e27fd1.setContent(html_9d3169a478f244da991d4121c6ada054);
+            
+
+            circle_marker_dc92d8d081f64108898e74191ed14366.bindPopup(popup_90c81f54e4574df3b9ba343346e27fd1);
+
+            
+        
+    
+
+            var circle_marker_663b12f8f16349ccae47e0cb484f5a9c = L.circleMarker(
+                [49.627324,6.107863],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#976800',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_023273f757cf4b9e900ceab64576fbf2 = L.popup({maxWidth: '300'});
+
+            
+                var html_673996798103468483e6d59fe2dee904 = $('<div id="html_673996798103468483e6d59fe2dee904" style="width: 100.0%; height: 100.0%;">LML - Lycée Michel Lucius:29.12</div>')[0];
+                popup_023273f757cf4b9e900ceab64576fbf2.setContent(html_673996798103468483e6d59fe2dee904);
+            
+
+            circle_marker_663b12f8f16349ccae47e0cb484f5a9c.bindPopup(popup_023273f757cf4b9e900ceab64576fbf2);
+
+            
+        
+    
+
+            var circle_marker_df77a969f303464ca61a96a2a365aeee = L.circleMarker(
+                [4.850698,52.29102],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#d12e00',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_b90cf87ff35c44c2adfb4481cdb71205 = L.popup({maxWidth: '300'});
+
+            
+                var html_64a9004f5a804d388e66f73eb2fb0aaf = $('<div id="html_64a9004f5a804d388e66f73eb2fb0aaf" style="width: 100.0%; height: 100.0%;">startbaan3:21.84</div>')[0];
+                popup_b90cf87ff35c44c2adfb4481cdb71205.setContent(html_64a9004f5a804d388e66f73eb2fb0aaf);
+            
+
+            circle_marker_df77a969f303464ca61a96a2a365aeee.bindPopup(popup_b90cf87ff35c44c2adfb4481cdb71205);
+
+            
+        
+    
+
+            var circle_marker_336444d55f954e33b43cbaa8e12e68c4 = L.circleMarker(
+                [38.196634,20.439724],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#6c9300',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_91e64f5cf3364e29bdbc054b3214b66b = L.popup({maxWidth: '300'});
+
+            
+                var html_bf4f3e5603104b6eb29283c111f88a83 = $('<div id="html_bf4f3e5603104b6eb29283c111f88a83" style="width: 100.0%; height: 100.0%;">Lixouri2:34.57</div>')[0];
+                popup_91e64f5cf3364e29bdbc054b3214b66b.setContent(html_bf4f3e5603104b6eb29283c111f88a83);
+            
+
+            circle_marker_336444d55f954e33b43cbaa8e12e68c4.bindPopup(popup_91e64f5cf3364e29bdbc054b3214b66b);
+
+            
+        
+    
+
+            var circle_marker_55bf2b852a4d49d3b98b0700ad747125 = L.circleMarker(
+                [48.563759,13.445813],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#ed1200',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_ecf08934b2fc47858451c752d71e3f9a = L.popup({maxWidth: '300'});
+
+            
+                var html_11e93b3358954e128f3cc6b48941f840 = $('<div id="html_11e93b3358954e128f3cc6b48941f840" style="width: 100.0%; height: 100.0%;">ASG Wetterstation:18.24</div>')[0];
+                popup_ecf08934b2fc47858451c752d71e3f9a.setContent(html_11e93b3358954e128f3cc6b48941f840);
+            
+
+            circle_marker_55bf2b852a4d49d3b98b0700ad747125.bindPopup(popup_ecf08934b2fc47858451c752d71e3f9a);
+
+            
+        
+    
+
+            var circle_marker_896d34f783be4e0b9240fd9c6fc8ae04 = L.circleMarker(
+                [54.728729,25.232436],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#728d00',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_58eacb8124b9481799f44e873220678a = L.popup({maxWidth: '300'});
+
+            
+                var html_3cc1bd9df0f348a1994d548f327e9dcf = $('<div id="html_3cc1bd9df0f348a1994d548f327e9dcf" style="width: 100.0%; height: 100.0%;">Raspberry_Pi:33.79</div>')[0];
+                popup_58eacb8124b9481799f44e873220678a.setContent(html_3cc1bd9df0f348a1994d548f327e9dcf);
+            
+
+            circle_marker_896d34f783be4e0b9240fd9c6fc8ae04.bindPopup(popup_58eacb8124b9481799f44e873220678a);
+
+            
+        
+    
+
+            var circle_marker_08cb6dbe2c2649aba6d4b0f68a94ccde = L.circleMarker(
+                [47.44209,15.299633],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#916e00',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_9dc443364ac54f19851902cec71f1d90 = L.popup({maxWidth: '300'});
+
+            
+                var html_5d79df23f97443e2ab34edce3fd310cc = $('<div id="html_5d79df23f97443e2ab34edce3fd310cc" style="width: 100.0%; height: 100.0%;">HTL Kapfenberg:29.81</div>')[0];
+                popup_9dc443364ac54f19851902cec71f1d90.setContent(html_5d79df23f97443e2ab34edce3fd310cc);
+            
+
+            circle_marker_08cb6dbe2c2649aba6d4b0f68a94ccde.bindPopup(popup_9dc443364ac54f19851902cec71f1d90);
+
+            
+        
+    
+
+            var circle_marker_ef206f22b970488295cc77c5fb9b7533 = L.circleMarker(
+                [38.196618,20.439742],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#986700',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_29d1a6a6e3914bac89bd29c7d2a9774a = L.popup({maxWidth: '300'});
+
+            
+                var html_b42db941d9b84a429275a82e2653d75a = $('<div id="html_b42db941d9b84a429275a82e2653d75a" style="width: 100.0%; height: 100.0%;">Lixouri - Kefalonia:28.94</div>')[0];
+                popup_29d1a6a6e3914bac89bd29c7d2a9774a.setContent(html_b42db941d9b84a429275a82e2653d75a);
+            
+
+            circle_marker_ef206f22b970488295cc77c5fb9b7533.bindPopup(popup_29d1a6a6e3914bac89bd29c7d2a9774a);
+
+            
+        
+    
+
+            var circle_marker_e0e10d284ca342c98cb5e49cbdefe073 = L.circleMarker(
+                [41.146,24.155],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#609f00',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_8f206988320b4534ad0102553b59744c = L.popup({maxWidth: '300'});
+
+            
+                var html_01f0d477fad142fdbae2292183e14af7 = $('<div id="html_01f0d477fad142fdbae2292183e14af7" style="width: 100.0%; height: 100.0%;">4th_Lyceum_of_Drama WS:36.06</div>')[0];
+                popup_8f206988320b4534ad0102553b59744c.setContent(html_01f0d477fad142fdbae2292183e14af7);
+            
+
+            circle_marker_e0e10d284ca342c98cb5e49cbdefe073.bindPopup(popup_8f206988320b4534ad0102553b59744c);
+
+            
+        
+    
+
+            var circle_marker_2df12006d5974a138aea2895aa82c225 = L.circleMarker(
+                [45.630937,-9.148652],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#b14e00',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_30cb115af5784077ad9023765feb526a = L.popup({maxWidth: '300'});
+
+            
+                var html_f36d1dc6af144be99ea17731f1668cad = $('<div id="html_f36d1dc6af144be99ea17731f1668cad" style="width: 100.0%; height: 100.0%;">meteocesano:25.8</div>')[0];
+                popup_30cb115af5784077ad9023765feb526a.setContent(html_f36d1dc6af144be99ea17731f1668cad);
+            
+
+            circle_marker_2df12006d5974a138aea2895aa82c225.bindPopup(popup_30cb115af5784077ad9023765feb526a);
+
+            
+        
+    
+
+            var circle_marker_c7d62e829c0b4431b7a350e12bea42ad = L.circleMarker(
+                [47.821407,13.046863],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#d22d00',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_d9b68614cddd447e959d5728054acf61 = L.popup({maxWidth: '300'});
+
+            
+                var html_ff947ba1c70a4537aa1441101dd7345a = $('<div id="html_ff947ba1c70a4537aa1441101dd7345a" style="width: 100.0%; height: 100.0%;">HTL Salzburg Wetterstation:21.61</div>')[0];
+                popup_d9b68614cddd447e959d5728054acf61.setContent(html_ff947ba1c70a4537aa1441101dd7345a);
+            
+
+            circle_marker_c7d62e829c0b4431b7a350e12bea42ad.bindPopup(popup_d9b68614cddd447e959d5728054acf61);
+
+            
+        
+    
+
+            var circle_marker_2b4c0efadadf4b198a867ce78499dafc = L.circleMarker(
+                [51.24602,-1.134301],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#847b00',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_3ba6a13f033a478280225f0169d0c26b = L.popup({maxWidth: '300'});
+
+            
+                var html_dc39f7345aa44fe59dd251c029e14451 = $('<div id="html_dc39f7345aa44fe59dd251c029e14451" style="width: 100.0%; height: 100.0%;">Garden:31.5</div>')[0];
+                popup_3ba6a13f033a478280225f0169d0c26b.setContent(html_dc39f7345aa44fe59dd251c029e14451);
+            
+
+            circle_marker_2b4c0efadadf4b198a867ce78499dafc.bindPopup(popup_3ba6a13f033a478280225f0169d0c26b);
+
+            
+        
+    
+
+            var circle_marker_90d3ee7a21024e1d83206d5f451dbd0d = L.circleMarker(
+                [51.574658,0.020523],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#d52a00',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_1948a7801d254946b3809fefd82605e1 = L.popup({maxWidth: '300'});
+
+            
+                var html_be3d083bf06040f5bf61a026812984eb = $('<div id="html_be3d083bf06040f5bf61a026812984eb" style="width: 100.0%; height: 100.0%;">ololweather:21.29</div>')[0];
+                popup_1948a7801d254946b3809fefd82605e1.setContent(html_be3d083bf06040f5bf61a026812984eb);
+            
+
+            circle_marker_90d3ee7a21024e1d83206d5f451dbd0d.bindPopup(popup_1948a7801d254946b3809fefd82605e1);
+
+            
+        
+    
+
+            var circle_marker_e6ef941bbaa3477fafaac910f30726aa = L.circleMarker(
+                [51.534122,-1.065971],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#bf0040',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_e4c8f1f86fd44f698aab55d420c56004 = L.popup({maxWidth: '300'});
+
+            
+                var html_1e9d9188ce31465caebaf8367685a111 = $('<div id="html_1e9d9188ce31465caebaf8367685a111" style="width: 100.0%; height: 100.0%;">Langtree:7.77</div>')[0];
+                popup_e4c8f1f86fd44f698aab55d420c56004.setContent(html_1e9d9188ce31465caebaf8367685a111);
+            
+
+            circle_marker_e6ef941bbaa3477fafaac910f30726aa.bindPopup(popup_e4c8f1f86fd44f698aab55d420c56004);
+
+            
+        
+    
+
+            var circle_marker_58a088681a57407b94562922c43f4b6a = L.circleMarker(
+                [10.739801,47.237048],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#906f00',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_3cfe9ca166284683bf09e455bde1c7e8 = L.popup({maxWidth: '300'});
+
+            
+                var html_8f5ecac303d240549269bf6cad1b4e50 = $('<div id="html_8f5ecac303d240549269bf6cad1b4e50" style="width: 100.0%; height: 100.0%;">Bundeshandelsakademie Imst:29.94</div>')[0];
+                popup_3cfe9ca166284683bf09e455bde1c7e8.setContent(html_8f5ecac303d240549269bf6cad1b4e50);
+            
+
+            circle_marker_58a088681a57407b94562922c43f4b6a.bindPopup(popup_3cfe9ca166284683bf09e455bde1c7e8);
+
+            
+        
+    
+
+            var circle_marker_d0d63d39048948e88435f88ac3d3af0b = L.circleMarker(
+                [35.034109,25.930117],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#a65900',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_977df80bf1484d1aabab64a878d70e9f = L.popup({maxWidth: '300'});
+
+            
+                var html_45de671fbf5e4d779e040c91228a480c = $('<div id="html_45de671fbf5e4d779e040c91228a480c" style="width: 100.0%; height: 100.0%;">Koutsouras Weather Station:27.2</div>')[0];
+                popup_977df80bf1484d1aabab64a878d70e9f.setContent(html_45de671fbf5e4d779e040c91228a480c);
+            
+
+            circle_marker_d0d63d39048948e88435f88ac3d3af0b.bindPopup(popup_977df80bf1484d1aabab64a878d70e9f);
+
+            
+        
+    
+
+            var circle_marker_2221a24af6954a22a84b70a505c8f812 = L.circleMarker(
+                [52.282774,-0.646623],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#9f0060',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_85a4411c9ec244c095297a6f8010a54b = L.popup({maxWidth: '300'});
+
+            
+                var html_d22c9f0c0636422785535bb91410b54a = $('<div id="html_d22c9f0c0636422785535bb91410b54a" style="width: 100.0%; height: 100.0%;">Lab13Irchester:3.74</div>')[0];
+                popup_85a4411c9ec244c095297a6f8010a54b.setContent(html_d22c9f0c0636422785535bb91410b54a);
+            
+
+            circle_marker_2221a24af6954a22a84b70a505c8f812.bindPopup(popup_85a4411c9ec244c095297a6f8010a54b);
+
+            
+        
+    
+
+            var circle_marker_1d5b4bedb22c496cb1962b86a5e392d9 = L.circleMarker(
+                [39.986605,-0.029553],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#d52a00',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_99040217e3464af5b2a8aa1235f5c851 = L.popup({maxWidth: '300'});
+
+            
+                var html_e4bbd59f690f4449ad52ae5e1e80a34a = $('<div id="html_e4bbd59f690f4449ad52ae5e1e80a34a" style="width: 100.0%; height: 100.0%;">Weather Station IES Penyagolosa:21.27</div>')[0];
+                popup_99040217e3464af5b2a8aa1235f5c851.setContent(html_e4bbd59f690f4449ad52ae5e1e80a34a);
+            
+
+            circle_marker_1d5b4bedb22c496cb1962b86a5e392d9.bindPopup(popup_99040217e3464af5b2a8aa1235f5c851);
+
+            
+        
+    
+
+            var circle_marker_30507adf61aa460c839168a30802f701 = L.circleMarker(
+                [55.905778,23.275667],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#d22d00',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_03707c38f4ec47d7a8356a1a3b65c92d = L.popup({maxWidth: '300'});
+
+            
+                var html_59bcc4e8fb42412e9865552e8c56c025 = $('<div id="html_59bcc4e8fb42412e9865552e8c56c025" style="width: 100.0%; height: 100.0%;">WS-SiauliuSauletekioGimnazija:21.63</div>')[0];
+                popup_03707c38f4ec47d7a8356a1a3b65c92d.setContent(html_59bcc4e8fb42412e9865552e8c56c025);
+            
+
+            circle_marker_30507adf61aa460c839168a30802f701.bindPopup(popup_03707c38f4ec47d7a8356a1a3b65c92d);
+
+            
+        
+    
+
+            var circle_marker_51403eeb5b4249b99a3c3bcf78076fa0 = L.circleMarker(
+                [37.031846,-7.839955],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#bb4400',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_d721e6d4b96c46bcaedba5befdc67ac6 = L.popup({maxWidth: '300'});
+
+            
+                var html_d84da9fc6e3d43bea5e029d4f202d2b8 = $('<div id="html_d84da9fc6e3d43bea5e029d4f202d2b8" style="width: 100.0%; height: 100.0%;">weather-aeffl:24.56</div>')[0];
+                popup_d721e6d4b96c46bcaedba5befdc67ac6.setContent(html_d84da9fc6e3d43bea5e029d4f202d2b8);
+            
+
+            circle_marker_51403eeb5b4249b99a3c3bcf78076fa0.bindPopup(popup_d721e6d4b96c46bcaedba5befdc67ac6);
+
+            
+        
+    
+
+            var circle_marker_b23c19ad428146509215c204c34231c9 = L.circleMarker(
+                [47.14057,10.56558],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#b54a00',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_32ee7bbe3f9d4a4b9a156c34d4629adc = L.popup({maxWidth: '300'});
+
+            
+                var html_5d4bd09b176a4d0b94562b55fc798454 = $('<div id="html_5d4bd09b176a4d0b94562b55fc798454" style="width: 100.0%; height: 100.0%;">Wetterstation BRG/BORG Landeck:25.33</div>')[0];
+                popup_32ee7bbe3f9d4a4b9a156c34d4629adc.setContent(html_5d4bd09b176a4d0b94562b55fc798454);
+            
+
+            circle_marker_b23c19ad428146509215c204c34231c9.bindPopup(popup_32ee7bbe3f9d4a4b9a156c34d4629adc);
+
+            
+        
+    
+
+            var circle_marker_be50cb73874b41b09ff5ced761e3563a = L.circleMarker(
+                [36.52785,23.04514],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#8d7200',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_084305a7872647bb8ef46cb1f47adae2 = L.popup({maxWidth: '300'});
+
+            
+                var html_d620a5b5cbd1455eb4d3fef356eb7940 = $('<div id="html_d620a5b5cbd1455eb4d3fef356eb7940" style="width: 100.0%; height: 100.0%;">Neapoli Weather Station:30.32</div>')[0];
+                popup_084305a7872647bb8ef46cb1f47adae2.setContent(html_d620a5b5cbd1455eb4d3fef356eb7940);
+            
+
+            circle_marker_be50cb73874b41b09ff5ced761e3563a.bindPopup(popup_084305a7872647bb8ef46cb1f47adae2);
+
+            
+        
+    
+
+            var circle_marker_ae09177e3b294145b2b354d0343033f4 = L.circleMarker(
+                [49.85612,5.252538],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#cf0030',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_6c0ab495c3f04a7781d5853667d715e8 = L.popup({maxWidth: '300'});
+
+            
+                var html_b72eea3b13d9424cbfd13cfb0e55684b = $('<div id="html_b72eea3b13d9424cbfd13cfb0e55684b" style="width: 100.0%; height: 100.0%;">Station IND:9.75</div>')[0];
+                popup_6c0ab495c3f04a7781d5853667d715e8.setContent(html_b72eea3b13d9424cbfd13cfb0e55684b);
+            
+
+            circle_marker_ae09177e3b294145b2b354d0343033f4.bindPopup(popup_6c0ab495c3f04a7781d5853667d715e8);
+
+            
+        
+    
+
+            var circle_marker_164948a91a7041d1b384ea8686096e60 = L.circleMarker(
+                [53.106468,6.114299],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#c43b00',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_9d0a137ae1ea4450ba13957c99b8b6fd = L.popup({maxWidth: '300'});
+
+            
+                var html_f2df440c5fbb4b199a3a0e35d31e8e73 = $('<div id="html_f2df440c5fbb4b199a3a0e35d31e8e73" style="width: 100.0%; height: 100.0%;">IT Weather Station:23.47</div>')[0];
+                popup_9d0a137ae1ea4450ba13957c99b8b6fd.setContent(html_f2df440c5fbb4b199a3a0e35d31e8e73);
+            
+
+            circle_marker_164948a91a7041d1b384ea8686096e60.bindPopup(popup_9d0a137ae1ea4450ba13957c99b8b6fd);
+
+            
+        
+    
+
+            var circle_marker_bf9a537a82524758baf7e2b05a992440 = L.circleMarker(
+                [52.70294,5.29839],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#e41b00',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_26279006e64743fe9360d1c5f86c068e = L.popup({maxWidth: '300'});
+
+            
+                var html_2261835799054307852b9d35cfdf9294 = $('<div id="html_2261835799054307852b9d35cfdf9294" style="width: 100.0%; height: 100.0%;">station1:19.44</div>')[0];
+                popup_26279006e64743fe9360d1c5f86c068e.setContent(html_2261835799054307852b9d35cfdf9294);
+            
+
+            circle_marker_bf9a537a82524758baf7e2b05a992440.bindPopup(popup_26279006e64743fe9360d1c5f86c068e);
+
+            
+        
+    
+
+            var circle_marker_20a44f3796a64a1690be070bf6f4f9c4 = L.circleMarker(
+                [50.079793,1.995599],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#e81700',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_5e7b9d6c99b94dceae393cda15fd2bcb = L.popup({maxWidth: '300'});
+
+            
+                var html_d2063b95cbfe41aebc33e34aa2842642 = $('<div id="html_d2063b95cbfe41aebc33e34aa2842642" style="width: 100.0%; height: 100.0%;">Ecole Victor Hugo:18.92</div>')[0];
+                popup_5e7b9d6c99b94dceae393cda15fd2bcb.setContent(html_d2063b95cbfe41aebc33e34aa2842642);
+            
+
+            circle_marker_20a44f3796a64a1690be070bf6f4f9c4.bindPopup(popup_5e7b9d6c99b94dceae393cda15fd2bcb);
+
+            
+        
+    
+
+            var circle_marker_00edb8893cd9445e9f0d3f6bdbeb4606 = L.circleMarker(
+                [57.693646,-4.251687],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#c93600',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_c78fe963067b46d5a70ae4c8b0ae6294 = L.popup({maxWidth: '300'});
+
+            
+                var html_d396366b3b5245b28b4f8a804e8ab0e7 = $('<div id="html_d396366b3b5245b28b4f8a804e8ab0e7" style="width: 100.0%; height: 100.0%;">A2:22.8</div>')[0];
+                popup_c78fe963067b46d5a70ae4c8b0ae6294.setContent(html_d396366b3b5245b28b4f8a804e8ab0e7);
+            
+
+            circle_marker_00edb8893cd9445e9f0d3f6bdbeb4606.bindPopup(popup_c78fe963067b46d5a70ae4c8b0ae6294);
+
+            
+        
+    
+
+            var circle_marker_5dadb6b3f64f4c4898f1883ebbb53714 = L.circleMarker(
+                [54.728729,25.232436],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#d32c00',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_fc04521abd0a4c3c97c26809fd958c4f = L.popup({maxWidth: '300'});
+
+            
+                var html_1568ef282c9d4babbdeaaab8eb33b70a = $('<div id="html_1568ef282c9d4babbdeaaab8eb33b70a" style="width: 100.0%; height: 100.0%;">pirmoji:21.49</div>')[0];
+                popup_fc04521abd0a4c3c97c26809fd958c4f.setContent(html_1568ef282c9d4babbdeaaab8eb33b70a);
+            
+
+            circle_marker_5dadb6b3f64f4c4898f1883ebbb53714.bindPopup(popup_fc04521abd0a4c3c97c26809fd958c4f);
+
+            
+        
+    
+
+            var circle_marker_b3b0e3d429b14a0d833475d2933e1b65 = L.circleMarker(
+                [54.517955,-6.050129],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#eb1400',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_063d7dbb76da4297b65f8fe3ad2e8a4a = L.popup({maxWidth: '300'});
+
+            
+                var html_5f1d7d5fb53a4a0e818e8124238609f5 = $('<div id="html_5f1d7d5fb53a4a0e818e8124238609f5" style="width: 100.0%; height: 100.0%;">Wallace Weather:18.54</div>')[0];
+                popup_063d7dbb76da4297b65f8fe3ad2e8a4a.setContent(html_5f1d7d5fb53a4a0e818e8124238609f5);
+            
+
+            circle_marker_b3b0e3d429b14a0d833475d2933e1b65.bindPopup(popup_063d7dbb76da4297b65f8fe3ad2e8a4a);
+
+            
+        
+    
+
+            var circle_marker_61bb0d7124a645a8aea3d55e379127b1 = L.circleMarker(
+                [37.595485,-2.26851],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#ec0013',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_d7f8981eb6a24c57a7a442d8a933b503 = L.popup({maxWidth: '300'});
+
+            
+                var html_4388120538bd46e7940fe4cfc1fe639f = $('<div id="html_4388120538bd46e7940fe4cfc1fe639f" style="width: 100.0%; height: 100.0%;">Colegio:13.45</div>')[0];
+                popup_d7f8981eb6a24c57a7a442d8a933b503.setContent(html_4388120538bd46e7940fe4cfc1fe639f);
+            
+
+            circle_marker_61bb0d7124a645a8aea3d55e379127b1.bindPopup(popup_d7f8981eb6a24c57a7a442d8a933b503);
+
+            
+        
+    
+
+            var circle_marker_5dee557f7c114899ad56e7de6e31ff9d = L.circleMarker(
+                [55.9453,4.5646],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#cf0030',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_be187d4aa35e4fd6a84e9b3c5f47c193 = L.popup({maxWidth: '300'});
+
+            
+                var html_dad505c2c9df4166900a53dde93773bc = $('<div id="html_dad505c2c9df4166900a53dde93773bc" style="width: 100.0%; height: 100.0%;">Callum_Inglis:9.77</div>')[0];
+                popup_be187d4aa35e4fd6a84e9b3c5f47c193.setContent(html_dad505c2c9df4166900a53dde93773bc);
+            
+
+            circle_marker_5dee557f7c114899ad56e7de6e31ff9d.bindPopup(popup_be187d4aa35e4fd6a84e9b3c5f47c193);
+
+            
+        
+    
+
+            var circle_marker_6f0ebcd0b2b848cd9b7ac82ed2f6f61e = L.circleMarker(
+                [51.383511,0.538223],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#b84700',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_9b470c1e0fd0411686b6d2945684e9bd = L.popup({maxWidth: '300'});
+
+            
+                var html_7539a855291c4232b66e921b4c7de708 = $('<div id="html_7539a855291c4232b66e921b4c7de708" style="width: 100.0%; height: 100.0%;">Test Brompton Academy:24.89</div>')[0];
+                popup_9b470c1e0fd0411686b6d2945684e9bd.setContent(html_7539a855291c4232b66e921b4c7de708);
+            
+
+            circle_marker_6f0ebcd0b2b848cd9b7ac82ed2f6f61e.bindPopup(popup_9b470c1e0fd0411686b6d2945684e9bd);
+
+            
+        
+    
+
+            var circle_marker_524e84bb1f1c464e86197153e046c066 = L.circleMarker(
+                [52.064358,1.153287],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#8a7500',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_8257e2b51e6443abb1361f0ceb5b5958 = L.popup({maxWidth: '300'});
+
+            
+                var html_e6ce2d3ad3d3497ebea9ba119b4e41e7 = $('<div id="html_e6ce2d3ad3d3497ebea9ba119b4e41e7" style="width: 100.0%; height: 100.0%;">christchurch:30.71</div>')[0];
+                popup_8257e2b51e6443abb1361f0ceb5b5958.setContent(html_e6ce2d3ad3d3497ebea9ba119b4e41e7);
+            
+
+            circle_marker_524e84bb1f1c464e86197153e046c066.bindPopup(popup_8257e2b51e6443abb1361f0ceb5b5958);
+
+            
+        
+    
+
+            var circle_marker_410358d0d5f74d99bdae1f1c63076bc3 = L.circleMarker(
+                [52.059168,1.181303],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#ba0045',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_40734d402ae647eca85d98894b6692bf = L.popup({maxWidth: '300'});
+
+            
+                var html_c8e3d7d50f9b435587f771caff13b3e0 = $('<div id="html_c8e3d7d50f9b435587f771caff13b3e0" style="width: 100.0%; height: 100.0%;">JimStation1:7.17</div>')[0];
+                popup_40734d402ae647eca85d98894b6692bf.setContent(html_c8e3d7d50f9b435587f771caff13b3e0);
+            
+
+            circle_marker_410358d0d5f74d99bdae1f1c63076bc3.bindPopup(popup_40734d402ae647eca85d98894b6692bf);
+
+            
+        
+    
+
+            var circle_marker_de88de5875de4a1b8ce4be6439b8758d = L.circleMarker(
+                [52.32984,0.337129],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#e1001e',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_99d176605f5a4324a8ca534d755833b0 = L.popup({maxWidth: '300'});
+
+            
+                var html_62d2f4d5418c448c9eae35cce4d8a456 = $('<div id="html_62d2f4d5418c448c9eae35cce4d8a456" style="width: 100.0%; height: 100.0%;">SVC1:12.01</div>')[0];
+                popup_99d176605f5a4324a8ca534d755833b0.setContent(html_62d2f4d5418c448c9eae35cce4d8a456);
+            
+
+            circle_marker_de88de5875de4a1b8ce4be6439b8758d.bindPopup(popup_99d176605f5a4324a8ca534d755833b0);
+
+            
+        
+    
+
+            var circle_marker_a512af0c40ab4cd9b621bd87df8bc05d = L.circleMarker(
+                [52.346752,0.333975],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: '#bb4400',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(map_26acea22a0cf4f5497271ca64ad98e3b);
+            
+    
+            var popup_9c59e00d4b784002b202048d28e3e01b = L.popup({maxWidth: '300'});
+
+            
+                var html_e92face8d4c24fb29c4c340519544db0 = $('<div id="html_e92face8d4c24fb29c4c340519544db0" style="width: 100.0%; height: 100.0%;">Home:24.51</div>')[0];
+                popup_9c59e00d4b784002b202048d28e3e01b.setContent(html_e92face8d4c24fb29c4c340519544db0);
+            
+
+            circle_marker_a512af0c40ab4cd9b621bd87df8bc05d.bindPopup(popup_9c59e00d4b784002b202048d28e3e01b);
+
+            
+        
+</script>
