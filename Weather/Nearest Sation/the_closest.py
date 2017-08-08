@@ -18,6 +18,7 @@ def find_closest():
         station_lon = station['weather_stn_long']
         station_lat = station['weather_stn_lat']
         distance = haversine(my_lon, my_lat, station_lon, station_lat)
+        print(distance)
         if distance < smallest:
             smallest = distance
             closest_station = station['weather_stn_id']
@@ -27,8 +28,8 @@ def find_closest():
 
 closest_stn = find_closest()
 weather = weather + str(closest_stn)
-my_weather = get(weather).json()['items'] [0] ['ambient_temp']
-(my_weather)= (temp)
-pprint (temp)
+my_weather = get(weather).json()['items']
+pprint (my_weather)
+
 
 
