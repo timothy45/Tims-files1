@@ -40,7 +40,7 @@
 
 
 # 8. Try adding a number and a string together and you get an error:
-age =  6
+age =  65
 name = 'Tim'
 #print(name + ' is ' + age + ' years old') this produces error. correct shown below
 print(name + ' is ' + str(age) + ' years old')
