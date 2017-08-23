@@ -90,14 +90,9 @@ raspberry_pi_is_expensive = False
 
 
 # 14. You can add two lists together in to a new list using +
-
-primary_colours = ['Red', 'Blue', 'Yellow']
-
+primary_colours = ['Red', 'Blue', 'Yellow','Purple']
 secondary_colours = ['Purple', 'Orange', 'Green']
-
 #main_colours = primary_colours + secondary_colours
-
-
 #print (main_colours)
 
 
@@ -105,9 +100,85 @@ secondary_colours = ['Purple', 'Orange', 'Green']
 # 15. You can find how many there are by using len(your_list). Try it below
 
 # How many colours are there in main_colours?
+'''
+len(primary_colours)# dont work!!!!! use below command
+print ('There are ',len(primary_colours),'primary colours')
 
-len(primary_colours)
+# 16. You can make sure you don't have duplicates by adding to a set
 
+'''
+
+'''
+
+even_numbers = [2, 4, 6, 8, 10, 12]
+multiples_of_three = [3, 6, 9, 12]
+numbers = even_numbers + multiples_of_three
+print(numbers, len(numbers))
+numbers_set = set(numbers)
+print(numbers_set, len(numbers_set))
+print(set("my name is Eric and Eric is my name".split()))
+'''
+
+
+# 17. You can use a loop to look over all the items in a list
+
+my_class = ['Sarah', 'Bob', 'Jim', 'Tom', 'Lucy', 'Sophie', 'Liz', 'Ed']
+
+# Below is a multi-line comment
+# Delete the ''' from before and after to uncomment the block
+# Add all the names of people in your group to this list
+# Remember the difference between append and extend. You can use either.
+# Now write a loop to print a number (starting from 1) before each name
+'''
+my_class.append('Black')
+x = 0
+for student in my_class:
+    x= x+1
+    print(x,student)
+'''
+
+#18. You can split up a string by index
+'''
+full_name = 'Dominic Adrian Smith'
+
+first_letter = full_name[0]
+last_letter = full_name[19]
+first_three = full_name[:3]  # [0:3 also works]
+last_three = full_name[-3:]  # [17:] and [17:20] also work
+middle = full_name[8:14]
+
+print (middle)
+print (first_letter)
+print (last_letter)
+print (first_three)
+print(last_three)
+print(middle+last_three)
+
+'''
+
+# 19. You can also split the string on a specific character
+
+my_sentence = "Hello, my name is Fred"
+parts = my_sentence.split(',')
+
+print(parts)
+print(type(parts))  # What type is this variable? What can you do with it?
+print(type(my_sentence))
 # GO!
+
+my_long_sentence = "This is a very very very very very very long sentence"
+
+# Now split the sentence and use this to print out the number of words
+parts1 = my_long_sentence.split(' ')
+
+print(parts1, len(parts1))
+# GO! (Clues below if you're stuck)
+
+# Clue: Which character do you split on to separate words?
+# Clue: What type is the split variable?
+# Clue: What can you do to count these?
+
+
+
 
 

@@ -6,3 +6,7 @@ git push origin master
 
 UN timothy45
 PWcooder45
+
+
+sudo apt-get update
+sudo apt-get upgrade
