@@ -156,28 +156,49 @@ print(middle+last_three)
 
 '''
 
+'''
 # 19. You can also split the string on a specific character
-
 my_sentence = "Hello, my name is Fred"
 parts = my_sentence.split(',')
-
 print(parts)
 print(type(parts))  # What type is this variable? What can you do with it?
 print(type(my_sentence))
-# GO!
-
 my_long_sentence = "This is a very very very very very very long sentence"
-
 # Now split the sentence and use this to print out the number of words
 parts1 = my_long_sentence.split(' ')
-
 print(parts1, len(parts1))
 # GO! (Clues below if you're stuck)
-
 # Clue: Which character do you split on to separate words?
 # Clue: What type is the split variable?
 # Clue: What can you do to count these?
+'''
 
+# 20. You can group data together in a tuple.Tuples cannot be written to like lists. Theu have () brackets rather than [] like kists
+person = ('Bobby', 26)
+print(person[0] + ' is ' +str(person[1]) + ' years old')
+# GO!
+
+
+# (name, age)
+students = [
+    ('Dave', 12),
+    ('Sophia', 13),
+    ('Sam', 12),
+    ('Kate', 11),
+    ('Daniel', 10)
+]
+for stud in students:
+    print(stud[0]+' is '+str(stud[1])+' years old')
+
+# Now write a loop to print each of the students' names and age
+
+# GO
+
+tup1 = ('physics', 'chemistry', 1997, 2000);
+tup2 = (1, 2, 3, 4, 5, 6, 7 );
+
+print ("subject is  " + tup1[0])
+print  (tup2[0:3])
 
 
 
