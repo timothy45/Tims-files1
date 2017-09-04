@@ -173,12 +173,13 @@ print(parts1, len(parts1))
 # Clue: What can you do to count these?
 '''
 
+'''
 # 20. You can group data together in a tuple.Tuples cannot be written to like lists. Theu have () brackets rather than [] like kists
 person = ('Bobby', 26)
 print(person[0] + ' is ' +str(person[1]) + ' years old')
 # GO!
-
-
+'''
+'''
 # (name, age)
 students = [
     ('Dave', 12),
@@ -200,6 +201,94 @@ tup2 = (1, 2, 3, 4, 5, 6, 7 );
 print ("subject is  " + tup1[0])
 print  (tup2[0:3])
 
+'''
 
+# 21. Tuples can be any length. The above examples are 2-tuples.
 
+# Try making a list of students with (name, age, favourite subject and sport)
 
+# Now loop over them printing each one out
+
+# Now pick a number (in the students' age range)
+# Make the loop only print the students older than that number
+
+# GO!
+'''
+students = [
+    ('Dave', 12, 'maths', 'foot'),
+    ('Sophia', 13, 'english','golf'),
+    ('Sam', 12,'geog', 'swim'),
+    ('Kate', 11, 'history','rugby'),
+    ('Daniel', 10,'lang','hockey')
+]
+
+for stud in students:
+    print(stud[0]+' is '+str(stud[1])+' years old. Loves '+(stud[2])+' and plays ' +(stud[3]))
+'''
+
+# 22. Another useful data structure is a dictionary
+
+# Dictionaries contain key-value pairs like an address book maps name
+# to number
+
+addresses = {
+    'Lauren': '0161 5673 890',
+    'Amy': '0115 8901 165',
+    'Daniel': '0114 2290 542',
+    'Emergency': '999'
+}
+
+# You access dictionary elements by looking them up with the key:
+
+print(addresses['Amy'])
+
+# You can check if a key or value exists in a given dictionary:
+
+print('David' in addresses)  # [False]
+print('Daniel' in addresses)  # [True]
+print('999' in addresses)  # [False]
+print('999' in addresses.values())  # [True]
+print(999 in addresses.values())  # [False]
+
+# GO!
+
+# Note that 999 was entered in to the dictionary as a string, not an integer
+
+# Think: what would happen if phone numbers were stored as integers? TIMS ANSWER:-
+#COULDNT START WITH 0
+
+# Try changing Amy's phone number to a new number
+
+addresses['Amy'] = '0115 236 359'
+print(addresses['Amy'])
+
+# GO!
+
+# Delete Daniel from the dictinary
+
+# print('Daniel' in addresses)  # [True]
+# del addresses['Daniel']
+# print('Daniel' in addresses)  # [False]
+
+# GO!
+
+# You can also loop over a dictionary and access its contents:
+
+'''
+for name in addresses:
+    print(name, addresses[name])
+'''
+
+# GO!
+
+y=0
+for i in range(1, 1001, 1):
+
+    print (str(i)+ " added to " +str(y))
+    
+    y=i+y
+    print ("Running total =    "+str(y))
+    
+    print ("\n")
+
+print ("The addition of all of the range from 1 to "+str(i)+" is " +str(y))
