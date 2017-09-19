@@ -1,5 +1,4 @@
-# CamJam Edukit 1 - Basics
-# Worksheet 2 - LEDs
+
 # Import Libraries
 import time # A collection of time related commands
 import os # Gives Python access to Linux commands
@@ -12,66 +11,80 @@ red = LED(18)
 yellow = LED(23)
 green = LED(24)
 # Set pin 25 as a button input
-buttonPin = Button(25)
-GPIO.setup(ButtonPin, GPIO.IN)
-GPIO.setmode(GPIO.BCM) #Set the GPIO pin naming mode
-GPIO.setwarnings(False) #Supress warnings
+button = Button(25)
 
+
+def ButtonCheck():# Check if button is pushed
+    
+ # If the button is pressed, button.is_pressed will be 'true'
+    if (button.is_pressed):
+        print("Button pressed")
+        time.sleep(5) # Sleep for 1 second
+        PedRed()
+             
+    else:     
+        print("Dont walk")
+
+time.sleep(0.5) # Sleep for 0.5 seconds
+
+
+def ButtonLoop():# Added to keep checking if button is pushed
+    y=5
+    while y>=0:
+        ButtonCheck()
+        time.sleep(0.5)
+        y=y-1
 
 def StartGreen():
     red.off()
     green.on()
-    time.sleep(3)
+    ButtonLoop()
     
 
 def SteadyAmber():
     green.off()
     yellow.on()
-    time.sleep(3)
+    ButtonLoop()
     
 
 def SteadyRed():
+    green.off()
     yellow.off()
+    
     red.on()
-    time.sleep(3)
-    
+    ButtonLoop()
 
-def TrafficLightSequence():
+def PedRed():#What happens when button pressed
+    red.off()
+    green.off()
+    yellow.on()
+    z=5 #Flashes amber
+    while z>=0:
+        yellow.on()
+        time.sleep(0.5)
+        yellow.off()
+        time.sleep(0.5)
+        print (z)
+        z=z-1
+    print ("walk")
+    red.on()
+    time.sleep(5)
     
+def TrafficLightSequence():#Sequnce for normaL OPERATION
     StartGreen()
     SteadyAmber()
     SteadyRed()
-
+    
 def Alloff():
      green.off()
      red.off()
      yellow.off()
+
+x=5 #loop for how long to run sequnce
+while x>=0:
+    TrafficLightSequence()
+    x=x-1
     
+Alloff()  
 
-# CamJam Edukit 1 - Basics
-# Worksheet 5 - Button
-
-# Import Libraries
-import os # Gives Python access to Linux commands
-import time # Proves time related commands
-from gpiozero import Button # The GPIO Zero button functions
-
-# Set pin 25 as a button input
-button = Button(25)
-
-print("-------------")
-print("Button + GPIO")
-print("-------------")
-
-# The commands indented after this ‘while’ will be repeated
-# forever or until ‘Ctrl+c’ is pressed.
-while True:
- # If the button is pressed, button.is_pressed will be 'true'
-    if (button.is_pressed):
-        print("Button pressed")
-        time.sleep(1) # Sleep for 1 second
-    else:
-        os.system("clear") # Clears the screen
-        print("Waiting for you to press the button")
-
-    time.sleep(0.5) # Sleep for 0.5 seconds
+    
